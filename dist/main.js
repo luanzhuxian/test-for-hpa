@@ -2816,9 +2816,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ hpa)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6);
-/* harmony import */ var _luigi_project_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _luigi_project_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9);
 /* harmony import */ var _luigi_project_client__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_luigi_project_client__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(11);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(10);
 /**
  * @eureka/hybrid-portal-adapter v1.0.0
  * Copyright (c) 2023 I566470 <zhuxian.luan@sap.com>
@@ -3233,16 +3234,17 @@ var hpa = {
 if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(7);
 } else {
-  module.exports = __webpack_require__(9);
+  module.exports = __webpack_require__(8);
 }
 
 
 /***/ }),
 /* 7 */
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
-/** @license React v17.0.2
+/**
+ * @license React
  * react.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -3250,126 +3252,33 @@ if (process.env.NODE_ENV === 'production') {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var l=__webpack_require__(8),n=60103,p=60106;exports.Fragment=60107;exports.StrictMode=60108;exports.Profiler=60114;var q=60109,r=60110,t=60112;exports.Suspense=60113;var u=60115,v=60116;
-if("function"===typeof Symbol&&Symbol.for){var w=Symbol.for;n=w("react.element");p=w("react.portal");exports.Fragment=w("react.fragment");exports.StrictMode=w("react.strict_mode");exports.Profiler=w("react.profiler");q=w("react.provider");r=w("react.context");t=w("react.forward_ref");exports.Suspense=w("react.suspense");u=w("react.memo");v=w("react.lazy")}var x="function"===typeof Symbol&&Symbol.iterator;
-function y(a){if(null===a||"object"!==typeof a)return null;a=x&&a[x]||a["@@iterator"];return"function"===typeof a?a:null}function z(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}
-var A={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},B={};function C(a,b,c){this.props=a;this.context=b;this.refs=B;this.updater=c||A}C.prototype.isReactComponent={};C.prototype.setState=function(a,b){if("object"!==typeof a&&"function"!==typeof a&&null!=a)throw Error(z(85));this.updater.enqueueSetState(this,a,b,"setState")};C.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
-function D(){}D.prototype=C.prototype;function E(a,b,c){this.props=a;this.context=b;this.refs=B;this.updater=c||A}var F=E.prototype=new D;F.constructor=E;l(F,C.prototype);F.isPureReactComponent=!0;var G={current:null},H=Object.prototype.hasOwnProperty,I={key:!0,ref:!0,__self:!0,__source:!0};
-function J(a,b,c){var e,d={},k=null,h=null;if(null!=b)for(e in void 0!==b.ref&&(h=b.ref),void 0!==b.key&&(k=""+b.key),b)H.call(b,e)&&!I.hasOwnProperty(e)&&(d[e]=b[e]);var g=arguments.length-2;if(1===g)d.children=c;else if(1<g){for(var f=Array(g),m=0;m<g;m++)f[m]=arguments[m+2];d.children=f}if(a&&a.defaultProps)for(e in g=a.defaultProps,g)void 0===d[e]&&(d[e]=g[e]);return{$$typeof:n,type:a,key:k,ref:h,props:d,_owner:G.current}}
-function K(a,b){return{$$typeof:n,type:a.type,key:b,ref:a.ref,props:a.props,_owner:a._owner}}function L(a){return"object"===typeof a&&null!==a&&a.$$typeof===n}function escape(a){var b={"=":"=0",":":"=2"};return"$"+a.replace(/[=:]/g,function(a){return b[a]})}var M=/\/+/g;function N(a,b){return"object"===typeof a&&null!==a&&null!=a.key?escape(""+a.key):b.toString(36)}
-function O(a,b,c,e,d){var k=typeof a;if("undefined"===k||"boolean"===k)a=null;var h=!1;if(null===a)h=!0;else switch(k){case "string":case "number":h=!0;break;case "object":switch(a.$$typeof){case n:case p:h=!0}}if(h)return h=a,d=d(h),a=""===e?"."+N(h,0):e,Array.isArray(d)?(c="",null!=a&&(c=a.replace(M,"$&/")+"/"),O(d,b,c,"",function(a){return a})):null!=d&&(L(d)&&(d=K(d,c+(!d.key||h&&h.key===d.key?"":(""+d.key).replace(M,"$&/")+"/")+a)),b.push(d)),1;h=0;e=""===e?".":e+":";if(Array.isArray(a))for(var g=
-0;g<a.length;g++){k=a[g];var f=e+N(k,g);h+=O(k,b,c,f,d)}else if(f=y(a),"function"===typeof f)for(a=f.call(a),g=0;!(k=a.next()).done;)k=k.value,f=e+N(k,g++),h+=O(k,b,c,f,d);else if("object"===k)throw b=""+a,Error(z(31,"[object Object]"===b?"object with keys {"+Object.keys(a).join(", ")+"}":b));return h}function P(a,b,c){if(null==a)return a;var e=[],d=0;O(a,e,"","",function(a){return b.call(c,a,d++)});return e}
-function Q(a){if(-1===a._status){var b=a._result;b=b();a._status=0;a._result=b;b.then(function(b){0===a._status&&(b=b.default,a._status=1,a._result=b)},function(b){0===a._status&&(a._status=2,a._result=b)})}if(1===a._status)return a._result;throw a._result;}var R={current:null};function S(){var a=R.current;if(null===a)throw Error(z(321));return a}var T={ReactCurrentDispatcher:R,ReactCurrentBatchConfig:{transition:0},ReactCurrentOwner:G,IsSomeRendererActing:{current:!1},assign:l};
-exports.Children={map:P,forEach:function(a,b,c){P(a,function(){b.apply(this,arguments)},c)},count:function(a){var b=0;P(a,function(){b++});return b},toArray:function(a){return P(a,function(a){return a})||[]},only:function(a){if(!L(a))throw Error(z(143));return a}};exports.Component=C;exports.PureComponent=E;exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED=T;
-exports.cloneElement=function(a,b,c){if(null===a||void 0===a)throw Error(z(267,a));var e=l({},a.props),d=a.key,k=a.ref,h=a._owner;if(null!=b){void 0!==b.ref&&(k=b.ref,h=G.current);void 0!==b.key&&(d=""+b.key);if(a.type&&a.type.defaultProps)var g=a.type.defaultProps;for(f in b)H.call(b,f)&&!I.hasOwnProperty(f)&&(e[f]=void 0===b[f]&&void 0!==g?g[f]:b[f])}var f=arguments.length-2;if(1===f)e.children=c;else if(1<f){g=Array(f);for(var m=0;m<f;m++)g[m]=arguments[m+2];e.children=g}return{$$typeof:n,type:a.type,
-key:d,ref:k,props:e,_owner:h}};exports.createContext=function(a,b){void 0===b&&(b=null);a={$$typeof:r,_calculateChangedBits:b,_currentValue:a,_currentValue2:a,_threadCount:0,Provider:null,Consumer:null};a.Provider={$$typeof:q,_context:a};return a.Consumer=a};exports.createElement=J;exports.createFactory=function(a){var b=J.bind(null,a);b.type=a;return b};exports.createRef=function(){return{current:null}};exports.forwardRef=function(a){return{$$typeof:t,render:a}};exports.isValidElement=L;
-exports.lazy=function(a){return{$$typeof:v,_payload:{_status:-1,_result:a},_init:Q}};exports.memo=function(a,b){return{$$typeof:u,type:a,compare:void 0===b?null:b}};exports.useCallback=function(a,b){return S().useCallback(a,b)};exports.useContext=function(a,b){return S().useContext(a,b)};exports.useDebugValue=function(){};exports.useEffect=function(a,b){return S().useEffect(a,b)};exports.useImperativeHandle=function(a,b,c){return S().useImperativeHandle(a,b,c)};
-exports.useLayoutEffect=function(a,b){return S().useLayoutEffect(a,b)};exports.useMemo=function(a,b){return S().useMemo(a,b)};exports.useReducer=function(a,b,c){return S().useReducer(a,b,c)};exports.useRef=function(a){return S().useRef(a)};exports.useState=function(a){return S().useState(a)};exports.version="17.0.2";
+var l=Symbol.for("react.element"),n=Symbol.for("react.portal"),p=Symbol.for("react.fragment"),q=Symbol.for("react.strict_mode"),r=Symbol.for("react.profiler"),t=Symbol.for("react.provider"),u=Symbol.for("react.context"),v=Symbol.for("react.forward_ref"),w=Symbol.for("react.suspense"),x=Symbol.for("react.memo"),y=Symbol.for("react.lazy"),z=Symbol.iterator;function A(a){if(null===a||"object"!==typeof a)return null;a=z&&a[z]||a["@@iterator"];return"function"===typeof a?a:null}
+var B={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},C=Object.assign,D={};function E(a,b,e){this.props=a;this.context=b;this.refs=D;this.updater=e||B}E.prototype.isReactComponent={};
+E.prototype.setState=function(a,b){if("object"!==typeof a&&"function"!==typeof a&&null!=a)throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");this.updater.enqueueSetState(this,a,b,"setState")};E.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};function F(){}F.prototype=E.prototype;function G(a,b,e){this.props=a;this.context=b;this.refs=D;this.updater=e||B}var H=G.prototype=new F;
+H.constructor=G;C(H,E.prototype);H.isPureReactComponent=!0;var I=Array.isArray,J=Object.prototype.hasOwnProperty,K={current:null},L={key:!0,ref:!0,__self:!0,__source:!0};
+function M(a,b,e){var d,c={},k=null,h=null;if(null!=b)for(d in void 0!==b.ref&&(h=b.ref),void 0!==b.key&&(k=""+b.key),b)J.call(b,d)&&!L.hasOwnProperty(d)&&(c[d]=b[d]);var g=arguments.length-2;if(1===g)c.children=e;else if(1<g){for(var f=Array(g),m=0;m<g;m++)f[m]=arguments[m+2];c.children=f}if(a&&a.defaultProps)for(d in g=a.defaultProps,g)void 0===c[d]&&(c[d]=g[d]);return{$$typeof:l,type:a,key:k,ref:h,props:c,_owner:K.current}}
+function N(a,b){return{$$typeof:l,type:a.type,key:b,ref:a.ref,props:a.props,_owner:a._owner}}function O(a){return"object"===typeof a&&null!==a&&a.$$typeof===l}function escape(a){var b={"=":"=0",":":"=2"};return"$"+a.replace(/[=:]/g,function(a){return b[a]})}var P=/\/+/g;function Q(a,b){return"object"===typeof a&&null!==a&&null!=a.key?escape(""+a.key):b.toString(36)}
+function R(a,b,e,d,c){var k=typeof a;if("undefined"===k||"boolean"===k)a=null;var h=!1;if(null===a)h=!0;else switch(k){case "string":case "number":h=!0;break;case "object":switch(a.$$typeof){case l:case n:h=!0}}if(h)return h=a,c=c(h),a=""===d?"."+Q(h,0):d,I(c)?(e="",null!=a&&(e=a.replace(P,"$&/")+"/"),R(c,b,e,"",function(a){return a})):null!=c&&(O(c)&&(c=N(c,e+(!c.key||h&&h.key===c.key?"":(""+c.key).replace(P,"$&/")+"/")+a)),b.push(c)),1;h=0;d=""===d?".":d+":";if(I(a))for(var g=0;g<a.length;g++){k=
+a[g];var f=d+Q(k,g);h+=R(k,b,e,f,c)}else if(f=A(a),"function"===typeof f)for(a=f.call(a),g=0;!(k=a.next()).done;)k=k.value,f=d+Q(k,g++),h+=R(k,b,e,f,c);else if("object"===k)throw b=String(a),Error("Objects are not valid as a React child (found: "+("[object Object]"===b?"object with keys {"+Object.keys(a).join(", ")+"}":b)+"). If you meant to render a collection of children, use an array instead.");return h}
+function S(a,b,e){if(null==a)return a;var d=[],c=0;R(a,d,"","",function(a){return b.call(e,a,c++)});return d}function T(a){if(-1===a._status){var b=a._result;b=b();b.then(function(b){if(0===a._status||-1===a._status)a._status=1,a._result=b},function(b){if(0===a._status||-1===a._status)a._status=2,a._result=b});-1===a._status&&(a._status=0,a._result=b)}if(1===a._status)return a._result.default;throw a._result;}
+var U={current:null},V={transition:null},W={ReactCurrentDispatcher:U,ReactCurrentBatchConfig:V,ReactCurrentOwner:K};exports.Children={map:S,forEach:function(a,b,e){S(a,function(){b.apply(this,arguments)},e)},count:function(a){var b=0;S(a,function(){b++});return b},toArray:function(a){return S(a,function(a){return a})||[]},only:function(a){if(!O(a))throw Error("React.Children.only expected to receive a single React element child.");return a}};exports.Component=E;exports.Fragment=p;
+exports.Profiler=r;exports.PureComponent=G;exports.StrictMode=q;exports.Suspense=w;exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED=W;
+exports.cloneElement=function(a,b,e){if(null===a||void 0===a)throw Error("React.cloneElement(...): The argument must be a React element, but you passed "+a+".");var d=C({},a.props),c=a.key,k=a.ref,h=a._owner;if(null!=b){void 0!==b.ref&&(k=b.ref,h=K.current);void 0!==b.key&&(c=""+b.key);if(a.type&&a.type.defaultProps)var g=a.type.defaultProps;for(f in b)J.call(b,f)&&!L.hasOwnProperty(f)&&(d[f]=void 0===b[f]&&void 0!==g?g[f]:b[f])}var f=arguments.length-2;if(1===f)d.children=e;else if(1<f){g=Array(f);
+for(var m=0;m<f;m++)g[m]=arguments[m+2];d.children=g}return{$$typeof:l,type:a.type,key:c,ref:k,props:d,_owner:h}};exports.createContext=function(a){a={$$typeof:u,_currentValue:a,_currentValue2:a,_threadCount:0,Provider:null,Consumer:null,_defaultValue:null,_globalName:null};a.Provider={$$typeof:t,_context:a};return a.Consumer=a};exports.createElement=M;exports.createFactory=function(a){var b=M.bind(null,a);b.type=a;return b};exports.createRef=function(){return{current:null}};
+exports.forwardRef=function(a){return{$$typeof:v,render:a}};exports.isValidElement=O;exports.lazy=function(a){return{$$typeof:y,_payload:{_status:-1,_result:a},_init:T}};exports.memo=function(a,b){return{$$typeof:x,type:a,compare:void 0===b?null:b}};exports.startTransition=function(a){var b=V.transition;V.transition={};try{a()}finally{V.transition=b}};exports.unstable_act=function(){throw Error("act(...) is not supported in production builds of React.");};
+exports.useCallback=function(a,b){return U.current.useCallback(a,b)};exports.useContext=function(a){return U.current.useContext(a)};exports.useDebugValue=function(){};exports.useDeferredValue=function(a){return U.current.useDeferredValue(a)};exports.useEffect=function(a,b){return U.current.useEffect(a,b)};exports.useId=function(){return U.current.useId()};exports.useImperativeHandle=function(a,b,e){return U.current.useImperativeHandle(a,b,e)};
+exports.useInsertionEffect=function(a,b){return U.current.useInsertionEffect(a,b)};exports.useLayoutEffect=function(a,b){return U.current.useLayoutEffect(a,b)};exports.useMemo=function(a,b){return U.current.useMemo(a,b)};exports.useReducer=function(a,b,e){return U.current.useReducer(a,b,e)};exports.useRef=function(a){return U.current.useRef(a)};exports.useState=function(a){return U.current.useState(a)};exports.useSyncExternalStore=function(a,b,e){return U.current.useSyncExternalStore(a,b,e)};
+exports.useTransition=function(){return U.current.useTransition()};exports.version="18.2.0";
 
 
 /***/ }),
 /* 8 */
-/***/ ((module) => {
+/***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
-/*
-object-assign
-(c) Sindre Sorhus
-@license MIT
-*/
-
-
-/* eslint-disable no-unused-vars */
-var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var propIsEnumerable = Object.prototype.propertyIsEnumerable;
-
-function toObject(val) {
-	if (val === null || val === undefined) {
-		throw new TypeError('Object.assign cannot be called with null or undefined');
-	}
-
-	return Object(val);
-}
-
-function shouldUseNative() {
-	try {
-		if (!Object.assign) {
-			return false;
-		}
-
-		// Detect buggy property enumeration order in older V8 versions.
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
-		var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
-		test1[5] = 'de';
-		if (Object.getOwnPropertyNames(test1)[0] === '5') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test2 = {};
-		for (var i = 0; i < 10; i++) {
-			test2['_' + String.fromCharCode(i)] = i;
-		}
-		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
-			return test2[n];
-		});
-		if (order2.join('') !== '0123456789') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test3 = {};
-		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
-			test3[letter] = letter;
-		});
-		if (Object.keys(Object.assign({}, test3)).join('') !==
-				'abcdefghijklmnopqrst') {
-			return false;
-		}
-
-		return true;
-	} catch (err) {
-		// We don't expect any of the above to throw, but better to be safe.
-		return false;
-	}
-}
-
-module.exports = shouldUseNative() ? Object.assign : function (target, source) {
-	var from;
-	var to = toObject(target);
-	var symbols;
-
-	for (var s = 1; s < arguments.length; s++) {
-		from = Object(arguments[s]);
-
-		for (var key in from) {
-			if (hasOwnProperty.call(from, key)) {
-				to[key] = from[key];
-			}
-		}
-
-		if (getOwnPropertySymbols) {
-			symbols = getOwnPropertySymbols(from);
-			for (var i = 0; i < symbols.length; i++) {
-				if (propIsEnumerable.call(from, symbols[i])) {
-					to[symbols[i]] = from[symbols[i]];
-				}
-			}
-		}
-	}
-
-	return to;
-};
-
-
-/***/ }),
-/* 9 */
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-/** @license React v17.0.2
+/* module decorator */ module = __webpack_require__.nmd(module);
+/**
+ * @license React
  * react.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -3382,64 +3291,37 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 if (process.env.NODE_ENV !== "production") {
   (function() {
-'use strict';
 
-var _assign = __webpack_require__(8);
+          'use strict';
 
-// TODO: this is special because it gets imported during build.
-var ReactVersion = '17.0.2';
+/* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
+if (
+  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' &&
+  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart ===
+    'function'
+) {
+  __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
+}
+          var ReactVersion = '18.2.0';
 
 // ATTENTION
 // When adding new symbols to this file,
 // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
-// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-// nor polyfill, then a plain number is used for performance.
-var REACT_ELEMENT_TYPE = 0xeac7;
-var REACT_PORTAL_TYPE = 0xeaca;
-exports.Fragment = 0xeacb;
-exports.StrictMode = 0xeacc;
-exports.Profiler = 0xead2;
-var REACT_PROVIDER_TYPE = 0xeacd;
-var REACT_CONTEXT_TYPE = 0xeace;
-var REACT_FORWARD_REF_TYPE = 0xead0;
-exports.Suspense = 0xead1;
-var REACT_SUSPENSE_LIST_TYPE = 0xead8;
-var REACT_MEMO_TYPE = 0xead3;
-var REACT_LAZY_TYPE = 0xead4;
-var REACT_BLOCK_TYPE = 0xead9;
-var REACT_SERVER_BLOCK_TYPE = 0xeada;
-var REACT_FUNDAMENTAL_TYPE = 0xead5;
-var REACT_SCOPE_TYPE = 0xead7;
-var REACT_OPAQUE_ID_TYPE = 0xeae0;
-var REACT_DEBUG_TRACING_MODE_TYPE = 0xeae1;
-var REACT_OFFSCREEN_TYPE = 0xeae2;
-var REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
-
-if (typeof Symbol === 'function' && Symbol.for) {
-  var symbolFor = Symbol.for;
-  REACT_ELEMENT_TYPE = symbolFor('react.element');
-  REACT_PORTAL_TYPE = symbolFor('react.portal');
-  exports.Fragment = symbolFor('react.fragment');
-  exports.StrictMode = symbolFor('react.strict_mode');
-  exports.Profiler = symbolFor('react.profiler');
-  REACT_PROVIDER_TYPE = symbolFor('react.provider');
-  REACT_CONTEXT_TYPE = symbolFor('react.context');
-  REACT_FORWARD_REF_TYPE = symbolFor('react.forward_ref');
-  exports.Suspense = symbolFor('react.suspense');
-  REACT_SUSPENSE_LIST_TYPE = symbolFor('react.suspense_list');
-  REACT_MEMO_TYPE = symbolFor('react.memo');
-  REACT_LAZY_TYPE = symbolFor('react.lazy');
-  REACT_BLOCK_TYPE = symbolFor('react.block');
-  REACT_SERVER_BLOCK_TYPE = symbolFor('react.server.block');
-  REACT_FUNDAMENTAL_TYPE = symbolFor('react.fundamental');
-  REACT_SCOPE_TYPE = symbolFor('react.scope');
-  REACT_OPAQUE_ID_TYPE = symbolFor('react.opaque.id');
-  REACT_DEBUG_TRACING_MODE_TYPE = symbolFor('react.debug_trace_mode');
-  REACT_OFFSCREEN_TYPE = symbolFor('react.offscreen');
-  REACT_LEGACY_HIDDEN_TYPE = symbolFor('react.legacy_hidden');
-}
-
-var MAYBE_ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+// The Symbol used to tag the ReactElement-like types.
+var REACT_ELEMENT_TYPE = Symbol.for('react.element');
+var REACT_PORTAL_TYPE = Symbol.for('react.portal');
+var REACT_FRAGMENT_TYPE = Symbol.for('react.fragment');
+var REACT_STRICT_MODE_TYPE = Symbol.for('react.strict_mode');
+var REACT_PROFILER_TYPE = Symbol.for('react.profiler');
+var REACT_PROVIDER_TYPE = Symbol.for('react.provider');
+var REACT_CONTEXT_TYPE = Symbol.for('react.context');
+var REACT_FORWARD_REF_TYPE = Symbol.for('react.forward_ref');
+var REACT_SUSPENSE_TYPE = Symbol.for('react.suspense');
+var REACT_SUSPENSE_LIST_TYPE = Symbol.for('react.suspense_list');
+var REACT_MEMO_TYPE = Symbol.for('react.memo');
+var REACT_LAZY_TYPE = Symbol.for('react.lazy');
+var REACT_OFFSCREEN_TYPE = Symbol.for('react.offscreen');
+var MAYBE_ITERATOR_SYMBOL = Symbol.iterator;
 var FAUX_ITERATOR_SYMBOL = '@@iterator';
 function getIteratorFn(maybeIterable) {
   if (maybeIterable === null || typeof maybeIterable !== 'object') {
@@ -3471,7 +3353,14 @@ var ReactCurrentDispatcher = {
  * should suspend for if it needs to.
  */
 var ReactCurrentBatchConfig = {
-  transition: 0
+  transition: null
+};
+
+var ReactCurrentActQueue = {
+  current: null,
+  // Used to reproduce behavior of `batchedUpdates` in legacy mode.
+  isBatchingLegacy: false,
+  didScheduleLegacyUpdate: false
 };
 
 /**
@@ -3524,24 +3413,27 @@ function setExtraStackFrame(stack) {
   };
 }
 
-/**
- * Used by act() to track whether you're inside an act() scope.
- */
-var IsSomeRendererActing = {
-  current: false
-};
+// -----------------------------------------------------------------------------
+
+var enableScopeAPI = false; // Experimental Create Event Handle API.
+var enableCacheElement = false;
+var enableTransitionTracing = false; // No known bugs, but needs performance testing
+
+var enableLegacyHidden = false; // Enables unstable_avoidThisFallback feature in Fiber
+// stuff. Intended to enable React core members to more easily debug scheduling
+// issues in DEV builds.
+
+var enableDebugTracing = false; // Track which Fiber(s) schedule render work.
 
 var ReactSharedInternals = {
   ReactCurrentDispatcher: ReactCurrentDispatcher,
   ReactCurrentBatchConfig: ReactCurrentBatchConfig,
-  ReactCurrentOwner: ReactCurrentOwner,
-  IsSomeRendererActing: IsSomeRendererActing,
-  // Used by renderers to avoid bundling object-assign twice in UMD bundles:
-  assign: _assign
+  ReactCurrentOwner: ReactCurrentOwner
 };
 
 {
   ReactSharedInternals.ReactDebugCurrentFrame = ReactDebugCurrentFrame;
+  ReactSharedInternals.ReactCurrentActQueue = ReactCurrentActQueue;
 }
 
 // by calls to these methods by a Babel plugin.
@@ -3551,20 +3443,24 @@ var ReactSharedInternals = {
 
 function warn(format) {
   {
-    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
+    {
+      for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+        args[_key - 1] = arguments[_key];
+      }
 
-    printWarning('warn', format, args);
+      printWarning('warn', format, args);
+    }
   }
 }
 function error(format) {
   {
-    for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-      args[_key2 - 1] = arguments[_key2];
-    }
+    {
+      for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+        args[_key2 - 1] = arguments[_key2];
+      }
 
-    printWarning('error', format, args);
+      printWarning('error', format, args);
+    }
   }
 }
 
@@ -3578,10 +3474,11 @@ function printWarning(level, format, args) {
     if (stack !== '') {
       format += '%s';
       args = args.concat([stack]);
-    }
+    } // eslint-disable-next-line react-internal/safe-string-coercion
+
 
     var argsWithFormat = args.map(function (item) {
-      return '' + item;
+      return String(item);
     }); // Careful: RN currently depends on this prefix
 
     argsWithFormat.unshift('Warning: ' + format); // We intentionally don't use spread (or .apply) directly because it
@@ -3679,6 +3576,8 @@ var ReactNoopUpdateQueue = {
   }
 };
 
+var assign = Object.assign;
+
 var emptyObject = {};
 
 {
@@ -3727,10 +3626,8 @@ Component.prototype.isReactComponent = {};
  */
 
 Component.prototype.setState = function (partialState, callback) {
-  if (!(typeof partialState === 'object' || typeof partialState === 'function' || partialState == null)) {
-    {
-      throw Error( "setState(...): takes an object of state variables to update or a function which returns an object of state variables." );
-    }
+  if (typeof partialState !== 'object' && typeof partialState !== 'function' && partialState != null) {
+    throw new Error('setState(...): takes an object of state variables to update or a ' + 'function which returns an object of state variables.');
   }
 
   this.updater.enqueueSetState(this, partialState, callback, 'setState');
@@ -3802,8 +3699,7 @@ function PureComponent(props, context, updater) {
 var pureComponentPrototype = PureComponent.prototype = new ComponentDummy();
 pureComponentPrototype.constructor = PureComponent; // Avoid an extra prototype jump for these methods.
 
-_assign(pureComponentPrototype, Component.prototype);
-
+assign(pureComponentPrototype, Component.prototype);
 pureComponentPrototype.isPureReactComponent = true;
 
 // an immutable object with a single mutable value
@@ -3819,16 +3715,97 @@ function createRef() {
   return refObject;
 }
 
-function getWrappedName(outerType, innerType, wrapperName) {
-  var functionName = innerType.displayName || innerType.name || '';
-  return outerType.displayName || (functionName !== '' ? wrapperName + "(" + functionName + ")" : wrapperName);
+var isArrayImpl = Array.isArray; // eslint-disable-next-line no-redeclare
+
+function isArray(a) {
+  return isArrayImpl(a);
 }
+
+/*
+ * The `'' + value` pattern (used in in perf-sensitive code) throws for Symbol
+ * and Temporal.* types. See https://github.com/facebook/react/pull/22064.
+ *
+ * The functions in this module will throw an easier-to-understand,
+ * easier-to-debug exception with a clear errors message message explaining the
+ * problem. (Instead of a confusing exception thrown inside the implementation
+ * of the `value` object).
+ */
+// $FlowFixMe only called in DEV, so void return is not possible.
+function typeName(value) {
+  {
+    // toStringTag is needed for namespaced types like Temporal.Instant
+    var hasToStringTag = typeof Symbol === 'function' && Symbol.toStringTag;
+    var type = hasToStringTag && value[Symbol.toStringTag] || value.constructor.name || 'Object';
+    return type;
+  }
+} // $FlowFixMe only called in DEV, so void return is not possible.
+
+
+function willCoercionThrow(value) {
+  {
+    try {
+      testStringCoercion(value);
+      return false;
+    } catch (e) {
+      return true;
+    }
+  }
+}
+
+function testStringCoercion(value) {
+  // If you ended up here by following an exception call stack, here's what's
+  // happened: you supplied an object or symbol value to React (as a prop, key,
+  // DOM attribute, CSS property, string ref, etc.) and when React tried to
+  // coerce it to a string using `'' + value`, an exception was thrown.
+  //
+  // The most common types that will cause this exception are `Symbol` instances
+  // and Temporal objects like `Temporal.Instant`. But any object that has a
+  // `valueOf` or `[Symbol.toPrimitive]` method that throws will also cause this
+  // exception. (Library authors do this to prevent users from using built-in
+  // numeric operators like `+` or comparison operators like `>=` because custom
+  // methods are needed to perform accurate arithmetic or comparison.)
+  //
+  // To fix the problem, coerce this object or symbol value to a string before
+  // passing it to React. The most reliable way is usually `String(value)`.
+  //
+  // To find which value is throwing, check the browser or debugger console.
+  // Before this exception was thrown, there should be `console.error` output
+  // that shows the type (Symbol, Temporal.PlainDate, etc.) that caused the
+  // problem and how that type was used: key, atrribute, input value prop, etc.
+  // In most cases, this console output also shows the component and its
+  // ancestor components where the exception happened.
+  //
+  // eslint-disable-next-line react-internal/safe-string-coercion
+  return '' + value;
+}
+function checkKeyStringCoercion(value) {
+  {
+    if (willCoercionThrow(value)) {
+      error('The provided key is an unsupported type %s.' + ' This value must be coerced to a string before before using it here.', typeName(value));
+
+      return testStringCoercion(value); // throw (to help callers find troubleshooting comments)
+    }
+  }
+}
+
+function getWrappedName(outerType, innerType, wrapperName) {
+  var displayName = outerType.displayName;
+
+  if (displayName) {
+    return displayName;
+  }
+
+  var functionName = innerType.displayName || innerType.name || '';
+  return functionName !== '' ? wrapperName + "(" + functionName + ")" : wrapperName;
+} // Keep in sync with react-reconciler/getComponentNameFromFiber
+
 
 function getContextName(type) {
   return type.displayName || 'Context';
-}
+} // Note that the reconciler package should generally prefer to use getComponentNameFromFiber() instead.
 
-function getComponentName(type) {
+
+function getComponentNameFromType(type) {
   if (type == null) {
     // Host root, text node or just invalid type.
     return null;
@@ -3836,7 +3813,7 @@ function getComponentName(type) {
 
   {
     if (typeof type.tag === 'number') {
-      error('Received an unexpected object in getComponentName(). ' + 'This is likely a bug in React. Please file an issue.');
+      error('Received an unexpected object in getComponentNameFromType(). ' + 'This is likely a bug in React. Please file an issue.');
     }
   }
 
@@ -3849,23 +3826,24 @@ function getComponentName(type) {
   }
 
   switch (type) {
-    case exports.Fragment:
+    case REACT_FRAGMENT_TYPE:
       return 'Fragment';
 
     case REACT_PORTAL_TYPE:
       return 'Portal';
 
-    case exports.Profiler:
+    case REACT_PROFILER_TYPE:
       return 'Profiler';
 
-    case exports.StrictMode:
+    case REACT_STRICT_MODE_TYPE:
       return 'StrictMode';
 
-    case exports.Suspense:
+    case REACT_SUSPENSE_TYPE:
       return 'Suspense';
 
     case REACT_SUSPENSE_LIST_TYPE:
       return 'SuspenseList';
+
   }
 
   if (typeof type === 'object') {
@@ -3882,10 +3860,13 @@ function getComponentName(type) {
         return getWrappedName(type, type.render, 'ForwardRef');
 
       case REACT_MEMO_TYPE:
-        return getComponentName(type.type);
+        var outerName = type.displayName || null;
 
-      case REACT_BLOCK_TYPE:
-        return getComponentName(type._render);
+        if (outerName !== null) {
+          return outerName;
+        }
+
+        return getComponentNameFromType(type.type) || 'Memo';
 
       case REACT_LAZY_TYPE:
         {
@@ -3894,11 +3875,13 @@ function getComponentName(type) {
           var init = lazyComponent._init;
 
           try {
-            return getComponentName(init(payload));
+            return getComponentNameFromType(init(payload));
           } catch (x) {
             return null;
           }
         }
+
+      // eslint-disable-next-line no-fallthrough
     }
   }
 
@@ -3906,6 +3889,7 @@ function getComponentName(type) {
 }
 
 var hasOwnProperty = Object.prototype.hasOwnProperty;
+
 var RESERVED_PROPS = {
   key: true,
   ref: true,
@@ -3985,7 +3969,7 @@ function defineRefPropWarningGetter(props, displayName) {
 function warnIfStringRefCannotBeAutoConverted(config) {
   {
     if (typeof config.ref === 'string' && ReactCurrentOwner.current && config.__self && ReactCurrentOwner.current.stateNode !== config.__self) {
-      var componentName = getComponentName(ReactCurrentOwner.current.type);
+      var componentName = getComponentNameFromType(ReactCurrentOwner.current.type);
 
       if (!didWarnAboutStringRefs[componentName]) {
         error('Component "%s" contains the string ref "%s". ' + 'Support for string refs will be removed in a future major release. ' + 'This case cannot be automatically converted to an arrow function. ' + 'We ask you to manually fix this case by using useRef() or createRef() instead. ' + 'Learn more about using refs safely here: ' + 'https://reactjs.org/link/strict-mode-string-ref', componentName, config.ref);
@@ -4094,6 +4078,10 @@ function createElement(type, config, children) {
     }
 
     if (hasValidKey(config)) {
+      {
+        checkKeyStringCoercion(config.key);
+      }
+
       key = '' + config.key;
     }
 
@@ -4166,16 +4154,13 @@ function cloneAndReplaceKey(oldElement, newKey) {
  */
 
 function cloneElement(element, config, children) {
-  if (!!(element === null || element === undefined)) {
-    {
-      throw Error( "React.cloneElement(...): The argument must be a React element, but you passed " + element + "." );
-    }
+  if (element === null || element === undefined) {
+    throw new Error("React.cloneElement(...): The argument must be a React element, but you passed " + element + ".");
   }
 
   var propName; // Original props are copied
 
-  var props = _assign({}, element.props); // Reserved names are extracted
-
+  var props = assign({}, element.props); // Reserved names are extracted
 
   var key = element.key;
   var ref = element.ref; // Self is preserved since the owner is preserved.
@@ -4196,6 +4181,10 @@ function cloneElement(element, config, children) {
     }
 
     if (hasValidKey(config)) {
+      {
+        checkKeyStringCoercion(config.key);
+      }
+
       key = '' + config.key;
     } // Remaining properties override existing props
 
@@ -4294,6 +4283,10 @@ function getElementKey(element, index) {
   // that we don't block potential future ES APIs.
   if (typeof element === 'object' && element !== null && element.key != null) {
     // Explicit key
+    {
+      checkKeyStringCoercion(element.key);
+    }
+
     return escape('' + element.key);
   } // Implicit key determined by the index in the set
 
@@ -4337,7 +4330,7 @@ function mapIntoArray(children, array, escapedPrefix, nameSoFar, callback) {
 
     var childKey = nameSoFar === '' ? SEPARATOR + getElementKey(_child, 0) : nameSoFar;
 
-    if (Array.isArray(mappedChild)) {
+    if (isArray(mappedChild)) {
       var escapedChildKey = '';
 
       if (childKey != null) {
@@ -4349,10 +4342,20 @@ function mapIntoArray(children, array, escapedPrefix, nameSoFar, callback) {
       });
     } else if (mappedChild != null) {
       if (isValidElement(mappedChild)) {
+        {
+          // The `if` statement here prevents auto-disabling of the safe
+          // coercion ESLint rule, so we must manually disable it below.
+          // $FlowFixMe Flow incorrectly thinks React.Portal doesn't have a key
+          if (mappedChild.key && (!_child || _child.key !== mappedChild.key)) {
+            checkKeyStringCoercion(mappedChild.key);
+          }
+        }
+
         mappedChild = cloneAndReplaceKey(mappedChild, // Keep both the (mapped) and old keys if they differ, just as
         // traverseAllChildren used to do for objects as children
         escapedPrefix + ( // $FlowFixMe Flow incorrectly thinks React.Portal doesn't have a key
         mappedChild.key && (!_child || _child.key !== mappedChild.key) ? // $FlowFixMe Flow incorrectly thinks existing element's key can be a number
+        // eslint-disable-next-line react-internal/safe-string-coercion
         escapeUserProvidedKey('' + mappedChild.key) + '/' : '') + childKey);
       }
 
@@ -4368,7 +4371,7 @@ function mapIntoArray(children, array, escapedPrefix, nameSoFar, callback) {
 
   var nextNamePrefix = nameSoFar === '' ? SEPARATOR : nameSoFar + SUBSEPARATOR;
 
-  if (Array.isArray(children)) {
+  if (isArray(children)) {
     for (var i = 0; i < children.length; i++) {
       child = children[i];
       nextName = nextNamePrefix + getElementKey(child, i);
@@ -4401,13 +4404,9 @@ function mapIntoArray(children, array, escapedPrefix, nameSoFar, callback) {
         subtreeCount += mapIntoArray(child, array, escapedPrefix, nextName, callback);
       }
     } else if (type === 'object') {
-      var childrenString = '' + children;
-
-      {
-        {
-          throw Error( "Objects are not valid as a React child (found: " + (childrenString === '[object Object]' ? 'object with keys {' + Object.keys(children).join(', ') + '}' : childrenString) + "). If you meant to render a collection of children, use an array instead." );
-        }
-      }
+      // eslint-disable-next-line react-internal/safe-string-coercion
+      var childrenString = String(children);
+      throw new Error("Objects are not valid as a React child (found: " + (childrenString === '[object Object]' ? 'object with keys {' + Object.keys(children).join(', ') + '}' : childrenString) + "). " + 'If you meant to render a collection of children, use an array ' + 'instead.');
     }
   }
 
@@ -4506,28 +4505,17 @@ function toArray(children) {
 
 function onlyChild(children) {
   if (!isValidElement(children)) {
-    {
-      throw Error( "React.Children.only expected to receive a single React element child." );
-    }
+    throw new Error('React.Children.only expected to receive a single React element child.');
   }
 
   return children;
 }
 
-function createContext(defaultValue, calculateChangedBits) {
-  if (calculateChangedBits === undefined) {
-    calculateChangedBits = null;
-  } else {
-    {
-      if (calculateChangedBits !== null && typeof calculateChangedBits !== 'function') {
-        error('createContext: Expected the optional second argument to be a ' + 'function. Instead received: %s', calculateChangedBits);
-      }
-    }
-  }
-
+function createContext(defaultValue) {
+  // TODO: Second argument used to be an optional `calculateChangedBits`
+  // function. Warn to reserve for future use?
   var context = {
     $$typeof: REACT_CONTEXT_TYPE,
-    _calculateChangedBits: calculateChangedBits,
     // As a workaround to support multiple concurrent renderers, we categorize
     // some renderers as primary and others as secondary. We only expect
     // there to be two concurrent renderers at most: React Native (primary) and
@@ -4540,7 +4528,10 @@ function createContext(defaultValue, calculateChangedBits) {
     _threadCount: 0,
     // These are circular
     Provider: null,
-    Consumer: null
+    Consumer: null,
+    // Add these to use same hidden class in VM as ServerContext
+    _defaultValue: null,
+    _globalName: null
   };
   context.Provider = {
     $$typeof: REACT_PROVIDER_TYPE,
@@ -4556,8 +4547,7 @@ function createContext(defaultValue, calculateChangedBits) {
     // warn for the incorrect usage of Context as a Consumer.
     var Consumer = {
       $$typeof: REACT_CONTEXT_TYPE,
-      _context: context,
-      _calculateChangedBits: context._calculateChangedBits
+      _context: context
     }; // $FlowFixMe: Flow complains about not setting a value, which is intentional here
 
     Object.defineProperties(Consumer, {
@@ -4644,38 +4634,54 @@ function lazyInitializer(payload) {
   if (payload._status === Uninitialized) {
     var ctor = payload._result;
     var thenable = ctor(); // Transition to the next state.
+    // This might throw either because it's missing or throws. If so, we treat it
+    // as still uninitialized and try again next time. Which is the same as what
+    // happens if the ctor or any wrappers processing the ctor throws. This might
+    // end up fixing it if the resolution was a concurrency bug.
 
-    var pending = payload;
-    pending._status = Pending;
-    pending._result = thenable;
     thenable.then(function (moduleObject) {
-      if (payload._status === Pending) {
-        var defaultExport = moduleObject.default;
-
-        {
-          if (defaultExport === undefined) {
-            error('lazy: Expected the result of a dynamic import() call. ' + 'Instead received: %s\n\nYour code should look like: \n  ' + // Break up imports to avoid accidentally parsing them as dependencies.
-            'const MyComponent = lazy(() => imp' + "ort('./MyComponent'))", moduleObject);
-          }
-        } // Transition to the next state.
-
-
+      if (payload._status === Pending || payload._status === Uninitialized) {
+        // Transition to the next state.
         var resolved = payload;
         resolved._status = Resolved;
-        resolved._result = defaultExport;
+        resolved._result = moduleObject;
       }
     }, function (error) {
-      if (payload._status === Pending) {
+      if (payload._status === Pending || payload._status === Uninitialized) {
         // Transition to the next state.
         var rejected = payload;
         rejected._status = Rejected;
         rejected._result = error;
       }
     });
+
+    if (payload._status === Uninitialized) {
+      // In case, we're still uninitialized, then we're waiting for the thenable
+      // to resolve. Set it as pending in the meantime.
+      var pending = payload;
+      pending._status = Pending;
+      pending._result = thenable;
+    }
   }
 
   if (payload._status === Resolved) {
-    return payload._result;
+    var moduleObject = payload._result;
+
+    {
+      if (moduleObject === undefined) {
+        error('lazy: Expected the result of a dynamic imp' + 'ort() call. ' + 'Instead received: %s\n\nYour code should look like: \n  ' + // Break up imports to avoid accidentally parsing them as dependencies.
+        'const MyComponent = lazy(() => imp' + "ort('./MyComponent'))\n\n" + 'Did you accidentally put curly braces around the import?', moduleObject);
+      }
+    }
+
+    {
+      if (!('default' in moduleObject)) {
+        error('lazy: Expected the result of a dynamic imp' + 'ort() call. ' + 'Instead received: %s\n\nYour code should look like: \n  ' + // Break up imports to avoid accidentally parsing them as dependencies.
+        'const MyComponent = lazy(() => imp' + "ort('./MyComponent'))", moduleObject);
+      }
+    }
+
+    return moduleObject.default;
   } else {
     throw payload._result;
   }
@@ -4684,7 +4690,7 @@ function lazyInitializer(payload) {
 function lazy(ctor) {
   var payload = {
     // We use these fields to store the result.
-    _status: -1,
+    _status: Uninitialized,
     _result: ctor
   };
   var lazyType = {
@@ -4770,9 +4776,15 @@ function forwardRef(render) {
         return ownName;
       },
       set: function (name) {
-        ownName = name;
+        ownName = name; // The inner component shouldn't inherit this display name in most cases,
+        // because the component may be used elsewhere.
+        // But it's nice for anonymous functions to inherit the name,
+        // so that our component-stack generation logic will display their frames.
+        // An anonymous function generally suggests a pattern like:
+        //   React.forwardRef((props, ref) => {...});
+        // This kind of inner function is not used elsewhere so the side effect is okay.
 
-        if (render.displayName == null) {
+        if (!render.name && !render.displayName) {
           render.displayName = name;
         }
       }
@@ -4782,9 +4794,11 @@ function forwardRef(render) {
   return elementType;
 }
 
-// Filter certain DOM attributes (e.g. src, href) if their values are empty strings.
+var REACT_MODULE_REFERENCE;
 
-var enableScopeAPI = false; // Experimental Create Event Handle API.
+{
+  REACT_MODULE_REFERENCE = Symbol.for('react.module.reference');
+}
 
 function isValidElementType(type) {
   if (typeof type === 'string' || typeof type === 'function') {
@@ -4792,12 +4806,16 @@ function isValidElementType(type) {
   } // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
 
 
-  if (type === exports.Fragment || type === exports.Profiler || type === REACT_DEBUG_TRACING_MODE_TYPE || type === exports.StrictMode || type === exports.Suspense || type === REACT_SUSPENSE_LIST_TYPE || type === REACT_LEGACY_HIDDEN_TYPE || enableScopeAPI ) {
+  if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing  || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden  || type === REACT_OFFSCREEN_TYPE || enableScopeAPI  || enableCacheElement  || enableTransitionTracing ) {
     return true;
   }
 
   if (typeof type === 'object' && type !== null) {
-    if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_BLOCK_TYPE || type[0] === REACT_SERVER_BLOCK_TYPE) {
+    if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
+    // types supported by any Flight configuration anywhere since
+    // we don't know which Flight build this will end up being used
+    // with.
+    type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== undefined) {
       return true;
     }
   }
@@ -4827,9 +4845,15 @@ function memo(type, compare) {
         return ownName;
       },
       set: function (name) {
-        ownName = name;
+        ownName = name; // The inner component shouldn't inherit this display name in most cases,
+        // because the component may be used elsewhere.
+        // But it's nice for anonymous functions to inherit the name,
+        // so that our component-stack generation logic will display their frames.
+        // An anonymous function generally suggests a pattern like:
+        //   React.memo((props) => {...});
+        // This kind of inner function is not used elsewhere so the side effect is okay.
 
-        if (type.displayName == null) {
+        if (!type.name && !type.displayName) {
           type.displayName = name;
         }
       }
@@ -4842,24 +4866,22 @@ function memo(type, compare) {
 function resolveDispatcher() {
   var dispatcher = ReactCurrentDispatcher.current;
 
-  if (!(dispatcher !== null)) {
-    {
-      throw Error( "Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem." );
+  {
+    if (dispatcher === null) {
+      error('Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for' + ' one of the following reasons:\n' + '1. You might have mismatching versions of React and the renderer (such as React DOM)\n' + '2. You might be breaking the Rules of Hooks\n' + '3. You might have more than one copy of React in the same app\n' + 'See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.');
     }
-  }
+  } // Will result in a null access error if accessed outside render phase. We
+  // intentionally don't throw our own error because this is in a hot path.
+  // Also helps ensure this is inlined.
+
 
   return dispatcher;
 }
-
-function useContext(Context, unstable_observedBits) {
+function useContext(Context) {
   var dispatcher = resolveDispatcher();
 
   {
-    if (unstable_observedBits !== undefined) {
-      error('useContext() second argument is reserved for future ' + 'use in React. Passing it is not supported. ' + 'You passed: %s.%s', unstable_observedBits, typeof unstable_observedBits === 'number' && Array.isArray(arguments[2]) ? '\n\nDid you call array.map(useContext)? ' + 'Calling Hooks inside a loop is not supported. ' + 'Learn more at https://reactjs.org/link/rules-of-hooks' : '');
-    } // TODO: add a more generic warning for invalid values.
-
-
+    // TODO: add a more generic warning for invalid values.
     if (Context._context !== undefined) {
       var realContext = Context._context; // Don't deduplicate because this legitimately causes bugs
       // and nobody should be using this in existing code.
@@ -4872,7 +4894,7 @@ function useContext(Context, unstable_observedBits) {
     }
   }
 
-  return dispatcher.useContext(Context, unstable_observedBits);
+  return dispatcher.useContext(Context);
 }
 function useState(initialState) {
   var dispatcher = resolveDispatcher();
@@ -4889,6 +4911,10 @@ function useRef(initialValue) {
 function useEffect(create, deps) {
   var dispatcher = resolveDispatcher();
   return dispatcher.useEffect(create, deps);
+}
+function useInsertionEffect(create, deps) {
+  var dispatcher = resolveDispatcher();
+  return dispatcher.useInsertionEffect(create, deps);
 }
 function useLayoutEffect(create, deps) {
   var dispatcher = resolveDispatcher();
@@ -4911,6 +4937,22 @@ function useDebugValue(value, formatterFn) {
     var dispatcher = resolveDispatcher();
     return dispatcher.useDebugValue(value, formatterFn);
   }
+}
+function useTransition() {
+  var dispatcher = resolveDispatcher();
+  return dispatcher.useTransition();
+}
+function useDeferredValue(value) {
+  var dispatcher = resolveDispatcher();
+  return dispatcher.useDeferredValue(value);
+}
+function useId() {
+  var dispatcher = resolveDispatcher();
+  return dispatcher.useId();
+}
+function useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot) {
+  var dispatcher = resolveDispatcher();
+  return dispatcher.useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }
 
 // Helpers to patch console.logs to avoid logging during side-effect free
@@ -4976,25 +5018,25 @@ function reenableLogs() {
       }; // $FlowFixMe Flow thinks console is immutable.
 
       Object.defineProperties(console, {
-        log: _assign({}, props, {
+        log: assign({}, props, {
           value: prevLog
         }),
-        info: _assign({}, props, {
+        info: assign({}, props, {
           value: prevInfo
         }),
-        warn: _assign({}, props, {
+        warn: assign({}, props, {
           value: prevWarn
         }),
-        error: _assign({}, props, {
+        error: assign({}, props, {
           value: prevError
         }),
-        group: _assign({}, props, {
+        group: assign({}, props, {
           value: prevGroup
         }),
-        groupCollapsed: _assign({}, props, {
+        groupCollapsed: assign({}, props, {
           value: prevGroupCollapsed
         }),
-        groupEnd: _assign({}, props, {
+        groupEnd: assign({}, props, {
           value: prevGroupEnd
         })
       });
@@ -5035,7 +5077,7 @@ var componentFrameCache;
 
 function describeNativeComponentFrame(fn, construct) {
   // If something asked for a stack inside a fake render, it should get ignored.
-  if (!fn || reentry) {
+  if ( !fn || reentry) {
     return '';
   }
 
@@ -5144,7 +5186,14 @@ function describeNativeComponentFrame(fn, construct) {
 
               if (c < 0 || sampleLines[s] !== controlLines[c]) {
                 // V8 adds a "new" prefix for native classes. Let's remove it to make it prettier.
-                var _frame = '\n' + sampleLines[s].replace(' at new ', ' at ');
+                var _frame = '\n' + sampleLines[s].replace(' at new ', ' at '); // If our component frame is labeled "<anonymous>"
+                // but we have a user-provided "displayName"
+                // splice it in to make the stack more readable.
+
+
+                if (fn.displayName && _frame.includes('<anonymous>')) {
+                  _frame = _frame.replace('<anonymous>', fn.displayName);
+                }
 
                 {
                   if (typeof fn === 'function') {
@@ -5213,7 +5262,7 @@ function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
   }
 
   switch (type) {
-    case exports.Suspense:
+    case REACT_SUSPENSE_TYPE:
       return describeBuiltInComponentFrame('Suspense');
 
     case REACT_SUSPENSE_LIST_TYPE:
@@ -5228,9 +5277,6 @@ function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
       case REACT_MEMO_TYPE:
         // Memo may contain any component type so we recursively resolve it.
         return describeUnknownElementTypeFrameInDEV(type.type, source, ownerFn);
-
-      case REACT_BLOCK_TYPE:
-        return describeFunctionComponentFrame(type._render);
 
       case REACT_LAZY_TYPE:
         {
@@ -5267,7 +5313,7 @@ function setCurrentlyValidatingElement(element) {
 function checkPropTypes(typeSpecs, values, location, componentName, element) {
   {
     // $FlowFixMe This is okay but Flow doesn't know it.
-    var has = Function.call.bind(Object.prototype.hasOwnProperty);
+    var has = Function.call.bind(hasOwnProperty);
 
     for (var typeSpecName in typeSpecs) {
       if (has(typeSpecs, typeSpecName)) {
@@ -5279,6 +5325,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, element) {
           // This is intentionally an invariant that gets caught. It's the same
           // behavior as without this statement except with a better message.
           if (typeof typeSpecs[typeSpecName] !== 'function') {
+            // eslint-disable-next-line react-internal/prod-error-codes
             var err = Error((componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.' + 'This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.');
             err.name = 'Invariant Violation';
             throw err;
@@ -5332,7 +5379,7 @@ var propTypesMisspellWarningShown;
 
 function getDeclarationErrorAddendum() {
   if (ReactCurrentOwner.current) {
-    var name = getComponentName(ReactCurrentOwner.current.type);
+    var name = getComponentNameFromType(ReactCurrentOwner.current.type);
 
     if (name) {
       return '\n\nCheck the render method of `' + name + '`.';
@@ -5414,7 +5461,7 @@ function validateExplicitKey(element, parentType) {
 
   if (element && element._owner && element._owner !== ReactCurrentOwner.current) {
     // Give the component that originally created this child.
-    childOwner = " It was passed a child from " + getComponentName(element._owner.type) + ".";
+    childOwner = " It was passed a child from " + getComponentNameFromType(element._owner.type) + ".";
   }
 
   {
@@ -5441,7 +5488,7 @@ function validateChildKeys(node, parentType) {
     return;
   }
 
-  if (Array.isArray(node)) {
+  if (isArray(node)) {
     for (var i = 0; i < node.length; i++) {
       var child = node[i];
 
@@ -5503,12 +5550,12 @@ function validatePropTypes(element) {
 
     if (propTypes) {
       // Intentionally inside to avoid triggering lazy initializers:
-      var name = getComponentName(type);
+      var name = getComponentNameFromType(type);
       checkPropTypes(propTypes, element.props, 'prop', name, element);
     } else if (type.PropTypes !== undefined && !propTypesMisspellWarningShown) {
       propTypesMisspellWarningShown = true; // Intentionally inside to avoid triggering lazy initializers:
 
-      var _name = getComponentName(type);
+      var _name = getComponentNameFromType(type);
 
       error('Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?', _name || 'Unknown');
     }
@@ -5573,10 +5620,10 @@ function createElementWithValidation(type, props, children) {
 
     if (type === null) {
       typeString = 'null';
-    } else if (Array.isArray(type)) {
+    } else if (isArray(type)) {
       typeString = 'array';
     } else if (type !== undefined && type.$$typeof === REACT_ELEMENT_TYPE) {
-      typeString = "<" + (getComponentName(type.type) || 'Unknown') + " />";
+      typeString = "<" + (getComponentNameFromType(type.type) || 'Unknown') + " />";
       info = ' Did you accidentally export a JSX literal instead of a component?';
     } else {
       typeString = typeof type;
@@ -5605,7 +5652,7 @@ function createElementWithValidation(type, props, children) {
     }
   }
 
-  if (type === exports.Fragment) {
+  if (type === REACT_FRAGMENT_TYPE) {
     validateFragmentProps(element);
   } else {
     validatePropTypes(element);
@@ -5652,16 +5699,263 @@ function cloneElementWithValidation(element, props, children) {
   return newElement;
 }
 
-{
+function startTransition(scope, options) {
+  var prevTransition = ReactCurrentBatchConfig.transition;
+  ReactCurrentBatchConfig.transition = {};
+  var currentTransition = ReactCurrentBatchConfig.transition;
+
+  {
+    ReactCurrentBatchConfig.transition._updatedFibers = new Set();
+  }
 
   try {
-    var frozenObject = Object.freeze({});
-    /* eslint-disable no-new */
+    scope();
+  } finally {
+    ReactCurrentBatchConfig.transition = prevTransition;
 
-    new Map([[frozenObject, null]]);
-    new Set([frozenObject]);
-    /* eslint-enable no-new */
-  } catch (e) {
+    {
+      if (prevTransition === null && currentTransition._updatedFibers) {
+        var updatedFibersCount = currentTransition._updatedFibers.size;
+
+        if (updatedFibersCount > 10) {
+          warn('Detected a large number of updates inside startTransition. ' + 'If this is due to a subscription please re-write it to use React provided hooks. ' + 'Otherwise concurrent mode guarantees are off the table.');
+        }
+
+        currentTransition._updatedFibers.clear();
+      }
+    }
+  }
+}
+
+var didWarnAboutMessageChannel = false;
+var enqueueTaskImpl = null;
+function enqueueTask(task) {
+  if (enqueueTaskImpl === null) {
+    try {
+      // read require off the module object to get around the bundlers.
+      // we don't want them to detect a require and bundle a Node polyfill.
+      var requireString = ('require' + Math.random()).slice(0, 7);
+      var nodeRequire = module && module[requireString]; // assuming we're in node, let's try to get node's
+      // version of setImmediate, bypassing fake timers if any.
+
+      enqueueTaskImpl = nodeRequire.call(module, 'timers').setImmediate;
+    } catch (_err) {
+      // we're in a browser
+      // we can't use regular timers because they may still be faked
+      // so we try MessageChannel+postMessage instead
+      enqueueTaskImpl = function (callback) {
+        {
+          if (didWarnAboutMessageChannel === false) {
+            didWarnAboutMessageChannel = true;
+
+            if (typeof MessageChannel === 'undefined') {
+              error('This browser does not have a MessageChannel implementation, ' + 'so enqueuing tasks via await act(async () => ...) will fail. ' + 'Please file an issue at https://github.com/facebook/react/issues ' + 'if you encounter this warning.');
+            }
+          }
+        }
+
+        var channel = new MessageChannel();
+        channel.port1.onmessage = callback;
+        channel.port2.postMessage(undefined);
+      };
+    }
+  }
+
+  return enqueueTaskImpl(task);
+}
+
+var actScopeDepth = 0;
+var didWarnNoAwaitAct = false;
+function act(callback) {
+  {
+    // `act` calls can be nested, so we track the depth. This represents the
+    // number of `act` scopes on the stack.
+    var prevActScopeDepth = actScopeDepth;
+    actScopeDepth++;
+
+    if (ReactCurrentActQueue.current === null) {
+      // This is the outermost `act` scope. Initialize the queue. The reconciler
+      // will detect the queue and use it instead of Scheduler.
+      ReactCurrentActQueue.current = [];
+    }
+
+    var prevIsBatchingLegacy = ReactCurrentActQueue.isBatchingLegacy;
+    var result;
+
+    try {
+      // Used to reproduce behavior of `batchedUpdates` in legacy mode. Only
+      // set to `true` while the given callback is executed, not for updates
+      // triggered during an async event, because this is how the legacy
+      // implementation of `act` behaved.
+      ReactCurrentActQueue.isBatchingLegacy = true;
+      result = callback(); // Replicate behavior of original `act` implementation in legacy mode,
+      // which flushed updates immediately after the scope function exits, even
+      // if it's an async function.
+
+      if (!prevIsBatchingLegacy && ReactCurrentActQueue.didScheduleLegacyUpdate) {
+        var queue = ReactCurrentActQueue.current;
+
+        if (queue !== null) {
+          ReactCurrentActQueue.didScheduleLegacyUpdate = false;
+          flushActQueue(queue);
+        }
+      }
+    } catch (error) {
+      popActScope(prevActScopeDepth);
+      throw error;
+    } finally {
+      ReactCurrentActQueue.isBatchingLegacy = prevIsBatchingLegacy;
+    }
+
+    if (result !== null && typeof result === 'object' && typeof result.then === 'function') {
+      var thenableResult = result; // The callback is an async function (i.e. returned a promise). Wait
+      // for it to resolve before exiting the current scope.
+
+      var wasAwaited = false;
+      var thenable = {
+        then: function (resolve, reject) {
+          wasAwaited = true;
+          thenableResult.then(function (returnValue) {
+            popActScope(prevActScopeDepth);
+
+            if (actScopeDepth === 0) {
+              // We've exited the outermost act scope. Recursively flush the
+              // queue until there's no remaining work.
+              recursivelyFlushAsyncActWork(returnValue, resolve, reject);
+            } else {
+              resolve(returnValue);
+            }
+          }, function (error) {
+            // The callback threw an error.
+            popActScope(prevActScopeDepth);
+            reject(error);
+          });
+        }
+      };
+
+      {
+        if (!didWarnNoAwaitAct && typeof Promise !== 'undefined') {
+          // eslint-disable-next-line no-undef
+          Promise.resolve().then(function () {}).then(function () {
+            if (!wasAwaited) {
+              didWarnNoAwaitAct = true;
+
+              error('You called act(async () => ...) without await. ' + 'This could lead to unexpected testing behaviour, ' + 'interleaving multiple act calls and mixing their ' + 'scopes. ' + 'You should - await act(async () => ...);');
+            }
+          });
+        }
+      }
+
+      return thenable;
+    } else {
+      var returnValue = result; // The callback is not an async function. Exit the current scope
+      // immediately, without awaiting.
+
+      popActScope(prevActScopeDepth);
+
+      if (actScopeDepth === 0) {
+        // Exiting the outermost act scope. Flush the queue.
+        var _queue = ReactCurrentActQueue.current;
+
+        if (_queue !== null) {
+          flushActQueue(_queue);
+          ReactCurrentActQueue.current = null;
+        } // Return a thenable. If the user awaits it, we'll flush again in
+        // case additional work was scheduled by a microtask.
+
+
+        var _thenable = {
+          then: function (resolve, reject) {
+            // Confirm we haven't re-entered another `act` scope, in case
+            // the user does something weird like await the thenable
+            // multiple times.
+            if (ReactCurrentActQueue.current === null) {
+              // Recursively flush the queue until there's no remaining work.
+              ReactCurrentActQueue.current = [];
+              recursivelyFlushAsyncActWork(returnValue, resolve, reject);
+            } else {
+              resolve(returnValue);
+            }
+          }
+        };
+        return _thenable;
+      } else {
+        // Since we're inside a nested `act` scope, the returned thenable
+        // immediately resolves. The outer scope will flush the queue.
+        var _thenable2 = {
+          then: function (resolve, reject) {
+            resolve(returnValue);
+          }
+        };
+        return _thenable2;
+      }
+    }
+  }
+}
+
+function popActScope(prevActScopeDepth) {
+  {
+    if (prevActScopeDepth !== actScopeDepth - 1) {
+      error('You seem to have overlapping act() calls, this is not supported. ' + 'Be sure to await previous act() calls before making a new one. ');
+    }
+
+    actScopeDepth = prevActScopeDepth;
+  }
+}
+
+function recursivelyFlushAsyncActWork(returnValue, resolve, reject) {
+  {
+    var queue = ReactCurrentActQueue.current;
+
+    if (queue !== null) {
+      try {
+        flushActQueue(queue);
+        enqueueTask(function () {
+          if (queue.length === 0) {
+            // No additional work was scheduled. Finish.
+            ReactCurrentActQueue.current = null;
+            resolve(returnValue);
+          } else {
+            // Keep flushing work until there's none left.
+            recursivelyFlushAsyncActWork(returnValue, resolve, reject);
+          }
+        });
+      } catch (error) {
+        reject(error);
+      }
+    } else {
+      resolve(returnValue);
+    }
+  }
+}
+
+var isFlushing = false;
+
+function flushActQueue(queue) {
+  {
+    if (!isFlushing) {
+      // Prevent re-entrance.
+      isFlushing = true;
+      var i = 0;
+
+      try {
+        for (; i < queue.length; i++) {
+          var callback = queue[i];
+
+          do {
+            callback = callback(true);
+          } while (callback !== null);
+        }
+
+        queue.length = 0;
+      } catch (error) {
+        // If something throws, leave the remaining callbacks on the queue.
+        queue = queue.slice(i + 1);
+        throw error;
+      } finally {
+        isFlushing = false;
+      }
+    }
   }
 }
 
@@ -5678,7 +5972,11 @@ var Children = {
 
 exports.Children = Children;
 exports.Component = Component;
+exports.Fragment = REACT_FRAGMENT_TYPE;
+exports.Profiler = REACT_PROFILER_TYPE;
 exports.PureComponent = PureComponent;
+exports.StrictMode = REACT_STRICT_MODE_TYPE;
+exports.Suspense = REACT_SUSPENSE_TYPE;
 exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals;
 exports.cloneElement = cloneElement$1;
 exports.createContext = createContext;
@@ -5689,30 +5987,46 @@ exports.forwardRef = forwardRef;
 exports.isValidElement = isValidElement;
 exports.lazy = lazy;
 exports.memo = memo;
+exports.startTransition = startTransition;
+exports.unstable_act = act;
 exports.useCallback = useCallback;
 exports.useContext = useContext;
 exports.useDebugValue = useDebugValue;
+exports.useDeferredValue = useDeferredValue;
 exports.useEffect = useEffect;
+exports.useId = useId;
 exports.useImperativeHandle = useImperativeHandle;
+exports.useInsertionEffect = useInsertionEffect;
 exports.useLayoutEffect = useLayoutEffect;
 exports.useMemo = useMemo;
 exports.useReducer = useReducer;
 exports.useRef = useRef;
 exports.useState = useState;
+exports.useSyncExternalStore = useSyncExternalStore;
+exports.useTransition = useTransition;
 exports.version = ReactVersion;
+          /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
+if (
+  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' &&
+  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop ===
+    'function'
+) {
+  __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
+}
+        
   })();
 }
 
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ ((module) => {
 
-!function(e,t){ true?module.exports=t():0}(window,(function(){return function(e){var t={};function n(i){if(t[i])return t[i].exports;var r=t[i]={i:i,l:!1,exports:{}};return e[i].call(r.exports,r,r.exports,n),r.l=!0,r.exports}return n.m=e,n.c=t,n.d=function(e,t,i){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:i})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var i=Object.create(null);if(n.r(i),Object.defineProperty(i,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)n.d(i,r,function(t){return e[t]}.bind(null,r));return i},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=13)}([function(e,t){e.exports=function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}},function(e,t){function n(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}e.exports=function(e,t,i){return t&&n(e.prototype,t),i&&n(e,i),e}},function(e,t,n){var i=n(7),r=n(5);e.exports=function(e,t){return!t||"object"!==i(t)&&"function"!=typeof t?r(e):t}},function(e,t){function n(t){return e.exports=n=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)},n(t)}e.exports=n},function(e,t,n){var i=n(8);e.exports=function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&i(e,t)}},function(e,t){e.exports=function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}},function(e,t,n){var i=n(10),r=n(11),o=n(12);e.exports=function(e,t){return i(e)||r(e,t)||o()}},function(e,t){function n(t){return"function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?e.exports=n=function(e){return typeof e}:e.exports=n=function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},n(t)}e.exports=n},function(e,t){function n(t,i){return e.exports=n=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e},n(t,i)}e.exports=n},function(e){e.exports=JSON.parse('{"name":"@luigi-project/client","description":"Javascript library supporting consumers of the Luigi framework","license":"Apache-2.0","main":"luigi-client.js","repository":{"type":"git","url":"ssh://github.com/SAP/luigi.git"},"publishConfig":{"tag":"luigi-client"},"keywords":["luigi","UI","extensibility","micro-frontends","microfrontends"],"version":"1.26.0"}')},function(e,t){e.exports=function(e){if(Array.isArray(e))return e}},function(e,t){e.exports=function(e,t){if(Symbol.iterator in Object(e)||"[object Arguments]"===Object.prototype.toString.call(e)){var n=[],i=!0,r=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(i=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);i=!0);}catch(e){r=!0,o=e}finally{try{i||null==s.return||s.return()}finally{if(r)throw o}}return n}}},function(e,t){e.exports=function(){throw new TypeError("Invalid attempt to destructure non-iterable instance")}},function(e,t,n){"use strict";n.r(t);var i=n(0),r=n.n(i),o=n(1),a=n.n(o),s=n(2),u=n.n(s),l=n(3),c=n.n(l),d=n(4),v=n.n(d),g=function(){function e(){r()(this,e),this.promises={}}return a()(e,[{key:"setPromise",value:function(e,t){this.promises[e]=t}},{key:"getPromise",value:function(e){return this.promises[e]}}]),e}(),f=new(function(){function e(){r()(this,e),this.listeners=[],this.origin="";var t=function(e){if(e.data.msg)if("custom"===e.data.msg){var t=this.convertCustomMessageInternalToUser(e.data);this.listeners.filter((function(e){return e.name===t.id})).map((function(e){return e.eventFn(t,e.listenerId)}))}else this.listeners.filter((function(t){return t.name===e.data.msg})).map((function(t){return t.eventFn(e,t.listenerId)}))}.bind(this);window.addEventListener("message",t)}return a()(e,[{key:"convertCustomMessageInternalToUser",value:function(e){return e.data}},{key:"convertCustomMessageUserToInternal",value:function(e){return{msg:"custom",data:e}}},{key:"convertStorageMessageToInternal",value:function(e){return{msg:"storage",data:e}}},{key:"addEventListener",value:function(e,t){var n=this.getRandomId();return this.listeners.push({name:e,eventFn:t,listenerId:n}),n}},{key:"removeEventListener",value:function(e){return!!Boolean(this.listeners.find((function(t){return t.listenerId===e})))&&(this.listeners=this.listeners.filter((function(t){return t.listenerId!==e})),!0)}},{key:"getRandomId",value:function(){return(window.crypto||window.msCrypto).getRandomValues(new Uint32Array(1))[0]}},{key:"isFunction",value:function(e){return"function"==typeof e}},{key:"isObject",value:function(e){return"[object Object]"===Object.prototype.toString.call(e)}},{key:"getLuigiCoreDomain",value:function(){return this.origin}},{key:"setLuigiCoreDomain",value:function(e){e&&"null"!==e&&(this.origin=e)}},{key:"setTargetOrigin",value:function(e){this.setLuigiCoreDomain(e)}},{key:"sendPostMessageToLuigiCore",value:function(e){if(this.origin)try{window.parent.postMessage(e,this.origin)}catch(t){console.warn("Unable to post message "+e+" to Luigi Core from origin "+this.origin+": "+t)}else console.warn('There is no target origin set. You can specify the target origin by calling LuigiClient.setTargetOrigin("targetorigin") in your micro frontend.')}},{key:"hasIntent",value:function(e){return!!e&&e.toLowerCase().includes("#?intent=")}},{key:"deSanitizeParamsMap",value:function(e){var t=this;return Object.entries(e).reduce((function(e,n){return e[t.deSanitizeParam(n[0])]=t.deSanitizeParam(n[1]),e}),{})}},{key:"deSanitizeParam",value:function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"";return String(e).replaceAll("&lt;","<").replaceAll("&gt;",">").replaceAll("&quot;",'"').replaceAll("&#39;","'").replaceAll("&sol;","/")}}]),e}()),h=new(function(e){function t(){var e;return r()(this,t),(e=u()(this,c()(t).call(this))).luigiInitialized=!1,e.defaultContextKeys=["context","internal","nodeParams","pathParams","searchParams"],e.setCurrentContext(e.defaultContextKeys.reduce((function(e,t){return e[t]={},e}),{})),e._onContextUpdatedFns={},e._onInactiveFns={},e._onInitFns={},e.authData={},e._isDeferInitDefined()||e.luigiClientInit(),e}return v()(t,e),a()(t,[{key:"_isDeferInitDefined",value:function(){return window.document.head.hasAttribute("defer-luigi-init")}},{key:"isLuigiClientInitialized",value:function(){return this.luigiInitialized}},{key:"luigiClientInit",value:function(){var e=this;if(this.luigiInitialized)console.warn("Luigi Client has been already initialized");else{var t=function(t){for(var n=0;n<e.defaultContextKeys.length;n++){var i=e.defaultContextKeys[n];try{"string"==typeof t[i]&&(t[i]=JSON.parse(t[i]))}catch(e){console.info("unable to parse luigi context data for",i,t[i],e)}}e.setCurrentContext(t)},i=function(t){t&&(e.authData=t)};f.addEventListener("luigi.init",(function(n){t(n.data),i(n.data.authData),f.setLuigiCoreDomain(n.origin),e.luigiInitialized=!0,e._notifyInit(n.origin),f.sendPostMessageToLuigiCore({msg:"luigi.init.ok"})})),f.addEventListener("luigi-client.inactive-microfrontend",(function(t){e._notifyInactive(t.origin)})),f.addEventListener("luigi.auth.tokenIssued",(function(e){i(e.data.authData)})),f.addEventListener("luigi.navigate",(function(n){if(t(n.data),!e.currentContext.internal.isNavigateBack&&!e.currentContext.withoutSync){var i=window.location.hash;history.replaceState({luigiInduced:!0},"",n.data.viewUrl),window.dispatchEvent(new PopStateEvent("popstate",{state:"luiginavigation"})),window.location.hash!==i&&window.dispatchEvent(new HashChangeEvent("hashchange"))}e.currentContext.withoutSync&&Object.assign(e.currentContext.context,{viewUrl:n.data.viewUrl?n.data.viewUrl:void 0,pathParams:n.data.pathParams?n.data.pathParams:void 0}),e._notifyUpdate(),f.sendPostMessageToLuigiCore({msg:"luigi.navigate.ok"})})),window.parent.postMessage({msg:"luigi.get-context",clientVersion:n(9).version},"*"),this._tpcCheck()}}},{key:"_tpcCheck",value:function(){var e,t,n="enabled",i=document.cookie;i&&(e=i.split(";").map((function(e){return e.trim()})).find((function(e){return"luigiCookie=true"==e}))),"luigiCookie=true"===e&&(t=e.split("=")[0],document.cookie=t+"=; Max-Age=-99999999;"),document.cookie="luigiCookie=true; SameSite=None; Secure",(i=document.cookie)&&(e=i.split(";").map((function(e){return e.trim()})).find((function(e){return"luigiCookie=true"==e}))),"luigiCookie=true"===e?(window.parent.postMessage({msg:"luigi.third-party-cookie",tpc:n},"*"),document.cookie=t+"=; Max-Age=-99999999;"):(n="disabled",window.parent.postMessage({msg:"luigi.third-party-cookie",tpc:n},"*"),console.warn("Third party cookies are not supported!"))}},{key:"_callAllFns",value:function(e,t,n){for(var i in e)e.hasOwnProperty(i)&&f.isFunction(e[i])&&e[i](t,n)}},{key:"_notifyInit",value:function(e){this._callAllFns(this._onInitFns,this.currentContext.context,e)}},{key:"_notifyUpdate",value:function(){this._callAllFns(this._onContextUpdatedFns,this.currentContext.context)}},{key:"_notifyInactive",value:function(){this._callAllFns(this._onInactiveFns)}},{key:"setCurrentContext",value:function(e){this.currentContext=e}},{key:"addInitListener",value:function(e){var t=f.getRandomId();return this._onInitFns[t]=e,this.luigiInitialized&&f.isFunction(e)&&e(this.currentContext.context,f.getLuigiCoreDomain()),t}},{key:"removeInitListener",value:function(e){return!!this._onInitFns[e]&&(this._onInitFns[e]=void 0,!0)}},{key:"addContextUpdateListener",value:function(e){var t=f.getRandomId();return this._onContextUpdatedFns[t]=e,this.luigiInitialized&&f.isFunction(e)&&e(this.currentContext.context),t}},{key:"removeContextUpdateListener",value:function(e){return!!this._onContextUpdatedFns[e]&&(this._onContextUpdatedFns[e]=void 0,!0)}},{key:"addInactiveListener",value:function(e){var t=f.getRandomId();return this._onInactiveFns[t]=e,t}},{key:"removeInactiveListener",value:function(e){return!!this._onInactiveFns[e]&&(this._onInactiveFns[e]=void 0,!0)}},{key:"addCustomMessageListener",value:function(e,t){return f.addEventListener(e,(function(e,n){return t(e,n)}))}},{key:"removeCustomMessageListener",value:function(e){return f.removeEventListener(e)}},{key:"getToken",value:function(){return this.authData.accessToken}},{key:"getContext",value:function(){return this.getEventData()}},{key:"getEventData",value:function(){return this.currentContext.context}},{key:"getActiveFeatureToggles",value:function(){return this.currentContext.internal.activeFeatureToggleList}},{key:"addNodeParams",value:function(e){var t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];e&&f.sendPostMessageToLuigiCore({msg:"luigi.addNodeParams",data:e,keepBrowserHistory:t})}},{key:"getNodeParams",value:function(){var e=arguments.length>0&&void 0!==arguments[0]&&arguments[0];return e?f.deSanitizeParamsMap(this.currentContext.nodeParams):this.currentContext.nodeParams}},{key:"getPathParams",value:function(){return this.currentContext.pathParams}},{key:"getCoreSearchParams",value:function(){return this.currentContext.searchParams||{}}},{key:"addCoreSearchParams",value:function(e){var t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];e&&f.sendPostMessageToLuigiCore({msg:"luigi.addSearchParams",data:e,keepBrowserHistory:t})}},{key:"getClientPermissions",value:function(){return this.currentContext.internal.clientPermissions||{}}},{key:"setTargetOrigin",value:function(e){f.setTargetOrigin(e)}},{key:"sendCustomMessage",value:function(e){var t=f.convertCustomMessageUserToInternal(e);f.sendPostMessageToLuigiCore(t)}},{key:"getUserSettings",value:function(){return this.currentContext.internal.userSettings}},{key:"getAnchor",value:function(){return this.currentContext.internal.anchor||""}},{key:"setAnchor",value:function(e){f.sendPostMessageToLuigiCore({msg:"luigi.setAnchor",anchor:e})}}]),t}(g)),p=n(6),m=n.n(p),y=n(5),k=n.n(y),C=function(e){function t(e){var n;r()(this,t),(n=u()(this,c()(t).call(this))).validSplitViewEvents=["expand","collapse","resize","close"],n.splitView={exists:!0,size:40,collapsed:!1},Object.assign(n.splitView,e);return n.splitView.listeners=[f.addEventListener("luigi.navigation.splitview.internal",(function(e){Object.assign(n.splitView,e.data.data)}))],n.on("resize",(function(e){n.splitView.size=e})),n.on("close",(function(){n.splitView.listeners.forEach((function(e){return f.removeEventListener(e)}))})),n}return v()(t,e),a()(t,[{key:"sendSplitViewEvent",value:function(e,t){f.sendPostMessageToLuigiCore({msg:"luigi.navigation.splitview.".concat(e),data:t})}},{key:"collapse",value:function(){this.sendSplitViewEvent("collapse")}},{key:"expand",value:function(){this.sendSplitViewEvent("expand")}},{key:"close",value:function(){this.sendSplitViewEvent("close")}},{key:"setSize",value:function(e){this.sendSplitViewEvent("resize",e)}},{key:"on",value:function(e,t){if(!this.validSplitViewEvents.includes(e))return console.warn(e+" is not a valid split view event"),!1;var n=f.addEventListener("luigi.navigation.splitview.".concat(e,".ok"),(function(e){var n="number"==typeof e.data.data?e.data.data:void 0;t(n)}));return this.splitView.listeners.push(n),n}},{key:"removeEventListener",value:function(e){return f.removeEventListener(e)}},{key:"exists",value:function(){return this.splitView.exists}},{key:"getSize",value:function(){return this.splitView.size}},{key:"isCollapsed",value:function(){return this.splitView.collapsed}},{key:"isExpanded",value:function(){return!this.splitView.collapsed}}]),t}(g),w=function(e){function t(e){var n;return r()(this,t),n=u()(this,c()(t).call(this)),Object.assign(k()(n),e),n.options={preserveView:!1,nodeParams:{},errorSkipNavigation:!1,fromContext:null,fromClosestContext:!1,fromVirtualTreeRoot:!1,fromParent:!1,relative:!1,link:"",newTab:!1,preserveQueryParams:!1,anchor:"",preventContextUpdate:!1,preventHistoryEntry:!1},n}return v()(t,e),a()(t,[{key:"navigate",value:function(e,t,n,i,r,o){if(this.options.errorSkipNavigation)this.options.errorSkipNavigation=!1;else{i&&r&&o&&console.warn("modalSettings, splitViewSettings and drawerSettings cannot be used together. Only modal setting will be taken into account."),this.options.preserveView=n;var a="/"!==e[0];if("/"===e&&(i||r||o))console.warn("Navigation with an absolute path prevented.");else{var s={msg:"luigi.navigation.open",sessionId:t,params:Object.assign(this.options,{link:e,relative:a,intent:f.hasIntent(e),modal:i,splitView:r,drawer:o})};f.sendPostMessageToLuigiCore(s)}}}},{key:"updateModalPathInternalNavigation",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(e){var i={msg:"luigi.navigation.updateModalDataPath",params:Object.assign(this.options,{link:e,modal:t,history:n})};f.sendPostMessageToLuigiCore(i)}else console.warn("Updating path of the modal upon internal navigation prevented. No path specified.")}},{key:"navigateToIntent",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n="#?intent=";if(n+=e,t){var i=Object.entries(t);if(i.length>0){n+="?";for(var r=0,o=i;r<o.length;r++){var a=m()(o[r],2),s=a[0],u=a[1];n+=s+"="+u+"&"}n=n.slice(0,-1)}}this.navigate(n)}},{key:"openAsModal",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};this.navigate(e,0,!0,t)}},{key:"updateModalSettings",value:function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t={msg:"luigi.navigation.updateModalSettings",updatedModalSettings:e};f.sendPostMessageToLuigiCore(t)}},{key:"openAsSplitView",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};return this.navigate(e,0,!0,void 0,t),new C(t)}},{key:"openAsDrawer",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};this.navigate(e,0,!0,void 0,void 0,t)}},{key:"fromContext",value:function(e){return this.currentContext.context.parentNavigationContexts&&-1!==this.currentContext.context.parentNavigationContexts.indexOf(e)?this.options.fromContext=e:(this.options.errorSkipNavigation=!0,console.error("Navigation not possible, navigationContext "+e+" not found.")),this}},{key:"fromClosestContext",value:function(){return this.currentContext&&this.currentContext.context.parentNavigationContexts.length>0?(this.options.fromContext=null,this.options.fromClosestContext=!0):console.error("Navigation not possible, no parent navigationContext found."),this}},{key:"fromVirtualTreeRoot",value:function(){return this.options.fromContext=null,this.options.fromClosestContext=!1,this.options.fromVirtualTreeRoot=!0,this}},{key:"fromParent",value:function(){return this.options.fromParent=!0,this}},{key:"withParams",value:function(e){return e&&Object.assign(this.options.nodeParams,e),this}},{key:"withOptions",value:function(e){return f.isObject(e)?(void 0!==e.preventHistoryEntry&&(this.options.preventHistoryEntry=e.preventHistoryEntry),void 0!==e.preventContextUpdate&&(this.options.preventContextUpdate=e.preventContextUpdate),this):this}},{key:"pathExists",value:function(e){var t=f.getRandomId(),n=this.getPromise("pathExistsPromises")||{};n[t]={resolveFn:function(){},then:function(e){this.resolveFn=e}},this.setPromise("pathExistsPromises",n),f.addEventListener("luigi.navigation.pathExists.answer",function(e,n){var i=e.data.data,r=this.getPromise("pathExistsPromises")||{};i.correlationId===t&&(r[i.correlationId]&&(r[i.correlationId].resolveFn(i.pathExists),delete r[i.correlationId],this.setPromise("pathExistsPromises",r)),f.removeEventListener(n))}.bind(this));var i={msg:"luigi.navigation.pathExists",data:Object.assign(this.options,{id:t,link:e,intent:f.hasIntent(e),relative:"/"!==e[0]})};return f.sendPostMessageToLuigiCore(i),n[t]}},{key:"hasBack",value:function(){return!!this.currentContext.internal.modal||0!==this.currentContext.internal.viewStackSize}},{key:"goBack",value:function(e){f.sendPostMessageToLuigiCore({msg:"luigi.navigation.back",goBackContext:e&&JSON.stringify(e)})}},{key:"withoutSync",value:function(){return this.options.withoutSync=!0,this}},{key:"newTab",value:function(){return this.options.newTab=!0,this}},{key:"preserveQueryParams",value:function(){var e=arguments.length>0&&void 0!==arguments[0]&&arguments[0];return this.options.preserveQueryParams=e,this}},{key:"getCurrentRoute",value:function(){var e=this,t=f.getRandomId(),n=this.getPromise("getCurrentRoute")||{};return n[t]={resolveFn:function(){},then:function(e){this.resolveFn=e}},this.setPromise("getCurrentRoute",n),f.addEventListener("luigi.navigation.currentRoute.answer",(function(n,i){var r=n.data.data,o=e.getPromise("getCurrentRoute")||{};r.correlationId===t&&(o[r.correlationId]&&(o[r.correlationId].resolveFn(r.route),delete o[r.correlationId],e.setPromise("getCurrentRoute",o)),f.removeEventListener(i)),f.removeEventListener(i)})),f.sendPostMessageToLuigiCore({msg:"luigi.navigation.currentRoute",data:Object.assign(this.options,{id:t})}),n[t]}}]),t}(g),x=new(function(e){function t(){var e;return r()(this,t),e=u()(this,c()(t).call(this)),f.addEventListener("luigi.current-locale-changed",(function(e){var t;e.data.currentLocale&&(null===(t=h.currentContext)||void 0===t?void 0:t.internal)&&(h.currentContext.internal.currentLocale=e.data.currentLocale,h._notifyUpdate())})),e}return v()(t,e),a()(t,[{key:"showLoadingIndicator",value:function(){f.sendPostMessageToLuigiCore({msg:"luigi.show-loading-indicator"})}},{key:"hideLoadingIndicator",value:function(){f.sendPostMessageToLuigiCore({msg:"luigi.hide-loading-indicator"})}},{key:"closeCurrentModal",value:function(){f.sendPostMessageToLuigiCore({msg:"luigi.close-modal"})}},{key:"addBackdrop",value:function(){f.sendPostMessageToLuigiCore({msg:"luigi.add-backdrop"})}},{key:"removeBackdrop",value:function(){f.sendPostMessageToLuigiCore({msg:"luigi.remove-backdrop"})}},{key:"setDirtyStatus",value:function(e){f.sendPostMessageToLuigiCore({msg:"luigi.set-page-dirty",dirty:e})}},{key:"showConfirmationModal",value:function(e){var t=this;f.addEventListener("luigi.ux.confirmationModal.hide",(function(e,n){t.hideConfirmationModal(e.data.data),f.removeEventListener(n)})),f.sendPostMessageToLuigiCore({msg:"luigi.ux.confirmationModal.show",data:{settings:e}});var n={};return n.promise=new Promise((function(e,t){n.resolveFn=e,n.rejectFn=t})),this.setPromise("confirmationModal",n),n.promise}},{key:"hideConfirmationModal",value:function(e){var t=this.getPromise("confirmationModal");t&&(e.confirmed?t.resolveFn():t.rejectFn(),this.setPromise("confirmationModal",void 0))}},{key:"showAlert",value:function(e){var t=this;f.addEventListener("luigi.ux.alert.hide",(function(e,n){t.hideAlert(e.data),f.removeEventListener(n)})),e.id=f.getRandomId(),(null==e?void 0:e.closeAfter)<100&&(console.warn("Message with id='".concat(e.id,"' has too small 'closeAfter' value. It needs to be at least 100ms.")),e.closeAfter=void 0),f.sendPostMessageToLuigiCore({msg:"luigi.ux.alert.show",data:{settings:e}});var n=this.getPromise("alerts")||{};return n[e.id]={},n[e.id].promise=new Promise((function(t){n[e.id].resolveFn=t})),this.setPromise("alerts",n),n[e.id].promise}},{key:"hideAlert",value:function(e){var t=e.id,n=e.dismissKey,i=this.getPromise("alerts");t&&i[t]&&(i[t].resolveFn(n||t),delete i[t],this.setPromise("alerts",i))}},{key:"getCurrentLocale",value:function(){var e,t;return null===(e=h.currentContext)||void 0===e||null===(t=e.internal)||void 0===t?void 0:t.currentLocale}},{key:"setCurrentLocale",value:function(e){e&&f.sendPostMessageToLuigiCore({msg:"luigi.ux.set-current-locale",data:{currentLocale:e}})}},{key:"isSplitView",value:function(){var e,t;return null===(e=h.currentContext)||void 0===e||null===(t=e.internal)||void 0===t?void 0:t.splitView}},{key:"isModal",value:function(){var e,t;return null===(e=h.currentContext)||void 0===e||null===(t=e.internal)||void 0===t?void 0:t.modal}},{key:"isDrawer",value:function(){var e,t;return null===(e=h.currentContext)||void 0===e||null===(t=e.internal)||void 0===t?void 0:t.drawer}},{key:"getCurrentTheme",value:function(){var e,t;return null===(e=h.currentContext)||void 0===e||null===(t=e.internal)||void 0===t?void 0:t.currentTheme}}]),t}(g)),P=new Map,L=function(e){function t(){var e;return r()(this,t),(e=u()(this,c()(t).call(this))).storageEventProcessor=new b,f.addEventListener("storage",(function(t,n){return e.storageEventProcessor.processEvent(t,n)})),e}return v()(t,e),a()(t,[{key:"setItem",value:function(e,t){var n=this;return new Promise((function(i,r){n.storageEventProcessor.execute(i,r,"setItem",{key:e,value:t})}))}},{key:"getItem",value:function(e){var t=this;return new Promise((function(n,i){t.storageEventProcessor.execute(n,i,"getItem",{key:e})}))}},{key:"removeItem",value:function(e){var t=this;return new Promise((function(n,i){t.storageEventProcessor.execute(n,i,"removeItem",{key:e})}))}},{key:"clear",value:function(){var e=this;return new Promise((function(t,n){e.storageEventProcessor.execute(t,n,"clear",{})}))}},{key:"has",value:function(e){var t=this;return new Promise((function(n,i){t.storageEventProcessor.execute(n,i,"has",{key:e})}))}},{key:"getAllKeys",value:function(){var e=this;return new Promise((function(t,n){e.storageEventProcessor.execute(t,n,"getAllKeys",{})}))}}]),t}(g),b=function(){function e(){r()(this,e)}return a()(e,[{key:"processEvent",value:function(e,t){try{var n=e.data.data;if(!P.has(n.id))return void console.log("Impossible to find Promise method for message "+n.id);var i=P.get(n.id);"ERROR"===n.status?i.reject(n.result):i.resolve(n.result),P.delete(n.id)}catch(e){console.error(e)}}},{key:"waitForSyncResult",value:function(e){for(var t=(new Date).getTime();!syncOperation.has(e);){if((new Date).getTime()-t>1e4)throw"Storage operation is taking more than 1 second...Some problem with Luigi Core communication"}var n=syncOperation.get(e);return P.delete(e),n}},{key:"execute",value:function(e,t,n,i){var r=f.getRandomId();this.createPendingOperation(r,e,t),this.sendMessage(r,n,i)}},{key:"createPendingOperation",value:function(e,t,n){P.set(e,{resolve:t,reject:n})}},{key:"sendMessage",value:function(e,t,n){f.sendPostMessageToLuigiCore({msg:"storage",data:{id:e,operation:t,params:n}})}}]),e}(),I=new L,M=function(){function e(){r()(this,e),window!==window.top&&("true"!==window.document.head.getAttribute("disable-luigi-history-handling")&&(history.pushState=history.replaceState.bind(history)),"true"!==window.document.head.getAttribute("disable-luigi-runtime-error-handling")&&window.addEventListener("error",(function(e){var t={msg:"luigi-runtime-error-handling",errorObj:{filename:e.filename,message:e.message,lineno:e.lineno,colno:e.colno,error:e.error}};f.sendPostMessageToLuigiCore(t)})))}return a()(e,[{key:"addInitListener",value:function(e){return h.addInitListener(e)}},{key:"removeInitListener",value:function(e){return h.removeInitListener(e)}},{key:"addContextUpdateListener",value:function(e){return h.addContextUpdateListener(e)}},{key:"removeContextUpdateListener",value:function(e){return h.removeContextUpdateListener(e)}},{key:"getToken",value:function(){return h.getToken()}},{key:"getEventData",value:function(){return h.getEventData()}},{key:"getContext",value:function(){return h.getContext()}},{key:"addNodeParams",value:function(e,t){return h.addNodeParams(e,t)}},{key:"getNodeParams",value:function(e){return h.getNodeParams(e)}},{key:"getActiveFeatureToggles",value:function(){return h.getActiveFeatureToggles()}},{key:"getPathParams",value:function(){return h.getPathParams()}},{key:"getCoreSearchParams",value:function(){return h.getCoreSearchParams()}},{key:"addCoreSearchParams",value:function(e,t){return h.addCoreSearchParams(e,t)}},{key:"getClientPermissions",value:function(){return h.getClientPermissions()}},{key:"sendCustomMessage",value:function(e){return h.sendCustomMessage(e)}},{key:"addCustomMessageListener",value:function(e,t){return h.addCustomMessageListener(e,t)}},{key:"removeCustomMessageListener",value:function(e){return h.removeCustomMessageListener(e)}},{key:"addInactiveListener",value:function(e,t){return h.addInactiveListener(e,t)}},{key:"removeInactiveListener",value:function(e){return h.removeInactiveListener(e)}},{key:"setTargetOrigin",value:function(e){return h.setTargetOrigin(e)}},{key:"getUserSettings",value:function(){return h.getUserSettings()}},{key:"isLuigiClientInitialized",value:function(){return h.isLuigiClientInitialized()}},{key:"luigiClientInit",value:function(){return h.luigiClientInit()}},{key:"getAnchor",value:function(){return h.getAnchor()}},{key:"setAnchor",value:function(e){return h.setAnchor(e)}},{key:"linkManager",value:function(){return new w({currentContext:h.currentContext})}},{key:"uxManager",value:function(){return x}},{key:"lifecycleManager",value:function(){return h}},{key:"storageManager",value:function(){return I}}]),e}();t.default=M=new M}]).default}));
+!function(e,t){ true?module.exports=t():0}(self,(function(){return function(){"use strict";var e={707:function(e){e.exports={i8:"2.7.0"}}},t={};function n(r){var o=t[r];if(void 0!==o)return o.exports;var i=t[r]={exports:{}};return e[r](i,i.exports,n),i.exports}n.d=function(e,t){for(var r in t)n.o(t,r)&&!n.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)};var r={};return function(){function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,n){for(var r=0;r<n.length;r++){var o=n[r];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(t,(void 0,i=function(t,n){if("object"!==e(t)||null===t)return t;var r=t[Symbol.toPrimitive];if(void 0!==r){var o=r.call(t,"string");if("object"!==e(o))return o;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(t)}(o.key),"symbol"===e(i)?i:String(i)),o)}var i}n.d(r,{default:function(){return Q}});var o=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.promises={}}var n,r;return n=e,(r=[{key:"setPromise",value:function(e,t){this.promises[e]=t}},{key:"getPromise",value:function(e){return this.promises[e]}}])&&t(n.prototype,r),Object.defineProperty(n,"prototype",{writable:!1}),e}();function i(e){return i="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},i(e)}function a(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,(void 0,o=function(e,t){if("object"!==i(e)||null===e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var r=n.call(e,"string");if("object"!==i(r))return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(e)}(r.key),"symbol"===i(o)?o:String(o)),r)}var o}var u=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.listeners=[],this.origin="";var t=function(e){if(e.data.msg)if("custom"===e.data.msg){var t=this.convertCustomMessageInternalToUser(e.data);this.listeners.filter((function(e){return e.name===t.id})).map((function(e){return e.eventFn(t,e.listenerId)}))}else this.listeners.filter((function(t){return t.name===e.data.msg})).map((function(t){return t.eventFn(e,t.listenerId)}))}.bind(this);window.addEventListener("message",t)}var t,n;return t=e,n=[{key:"convertCustomMessageInternalToUser",value:function(e){return e.data}},{key:"convertCustomMessageUserToInternal",value:function(e){return{msg:"custom",data:e}}},{key:"convertStorageMessageToInternal",value:function(e){return{msg:"storage",data:e}}},{key:"addEventListener",value:function(e,t){var n=this.getRandomId();return this.listeners.push({name:e,eventFn:t,listenerId:n}),n}},{key:"removeEventListener",value:function(e){return!!Boolean(this.listeners.find((function(t){return t.listenerId===e})))&&(this.listeners=this.listeners.filter((function(t){return t.listenerId!==e})),!0)}},{key:"getRandomId",value:function(){return(window.crypto||window.msCrypto).getRandomValues(new Uint32Array(1))[0]}},{key:"isFunction",value:function(e){return"function"==typeof e}},{key:"isObject",value:function(e){return"[object Object]"===Object.prototype.toString.call(e)}},{key:"getLuigiCoreDomain",value:function(){return this.origin}},{key:"setLuigiCoreDomain",value:function(e){e&&"null"!==e&&(this.origin=e)}},{key:"setTargetOrigin",value:function(e){this.setLuigiCoreDomain(e)}},{key:"sendPostMessageToLuigiCore",value:function(e){if(this.origin)try{window.parent.postMessage(e,this.origin)}catch(t){console.warn("Unable to post message "+e+" to Luigi Core from origin "+this.origin+": "+t)}else console.warn('There is no target origin set. You can specify the target origin by calling LuigiClient.setTargetOrigin("targetorigin") in your micro frontend.')}},{key:"hasIntent",value:function(e){return!!e&&e.toLowerCase().includes("#?intent=")}},{key:"deSanitizeParamsMap",value:function(e){var t=this;return Object.entries(e).reduce((function(e,n){return e[t.deSanitizeParam(n[0])]=t.deSanitizeParam(n[1]),e}),{})}},{key:"deSanitizeParam",value:function(){return String(arguments.length>0&&void 0!==arguments[0]?arguments[0]:"").replaceAll("&lt;","<").replaceAll("&gt;",">").replaceAll("&quot;",'"').replaceAll("&#39;","'").replaceAll("&sol;","/")}}],n&&a(t.prototype,n),Object.defineProperty(t,"prototype",{writable:!1}),e}(),s=new u;function c(e){return c="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},c(e)}function l(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,(void 0,o=function(e,t){if("object"!==c(e)||null===e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var r=n.call(e,"string");if("object"!==c(r))return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(e)}(r.key),"symbol"===c(o)?o:String(o)),r)}var o}function f(e,t){return f=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(e,t){return e.__proto__=t,e},f(e,t)}function v(e){return v=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(e){return e.__proto__||Object.getPrototypeOf(e)},v(e)}var d=function(e){!function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&f(e,t)}(u,e);var t,r,o,i,a=(o=u,i=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],(function(){}))),!0}catch(e){return!1}}(),function(){var e,t=v(o);if(i){var n=v(this).constructor;e=Reflect.construct(t,arguments,n)}else e=t.apply(this,arguments);return function(e,t){if(t&&("object"===c(t)||"function"==typeof t))return t;if(void 0!==t)throw new TypeError("Derived constructors may only return object or undefined");return function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e)}(this,e)});function u(){var e;return function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,u),(e=a.call(this)).luigiInitialized=!1,e.defaultContextKeys=["context","internal","nodeParams","pathParams","searchParams"],e.setCurrentContext(e.defaultContextKeys.reduce((function(e,t){return e[t]={},e}),{})),e._onContextUpdatedFns={},e._onInactiveFns={},e._onInitFns={},e.authData={},e._isDeferInitDefined()||e.luigiClientInit(),e}return t=u,r=[{key:"_isDeferInitDefined",value:function(){return window.document.head.hasAttribute("defer-luigi-init")}},{key:"isLuigiClientInitialized",value:function(){return this.luigiInitialized}},{key:"luigiClientInit",value:function(){var e=this;if(this.luigiInitialized)console.warn("Luigi Client has been already initialized");else{var t=function(t){for(var n=0;n<e.defaultContextKeys.length;n++){var r=e.defaultContextKeys[n];try{"string"==typeof t[r]&&(t[r]=JSON.parse(t[r]))}catch(e){console.info("unable to parse luigi context data for",r,t[r],e)}}e.setCurrentContext(t)},r=function(t){t&&(e.authData=t)};s.addEventListener("luigi.init",(function(n){t(n.data),r(n.data.authData),s.setLuigiCoreDomain(n.origin),e.luigiInitialized=!0,e._notifyInit(n.origin),s.sendPostMessageToLuigiCore({msg:"luigi.init.ok"})})),s.addEventListener("luigi-client.inactive-microfrontend",(function(t){e._notifyInactive(t.origin)})),s.addEventListener("luigi.auth.tokenIssued",(function(e){r(e.data.authData)})),s.addEventListener("luigi.navigate",(function(n){if(t(n.data),!e.currentContext.internal.isNavigateBack&&!e.currentContext.withoutSync){var r=window.location.hash;history.replaceState({luigiInduced:!0},"",n.data.viewUrl),window.dispatchEvent(new PopStateEvent("popstate",{state:"luiginavigation"})),window.location.hash!==r&&window.dispatchEvent(new HashChangeEvent("hashchange"))}e.currentContext.withoutSync&&Object.assign(e.currentContext.context,{viewUrl:n.data.viewUrl?n.data.viewUrl:void 0,pathParams:n.data.pathParams?n.data.pathParams:void 0}),e._notifyUpdate(),s.sendPostMessageToLuigiCore({msg:"luigi.navigate.ok"})})),window.parent.postMessage({msg:"luigi.get-context",clientVersion:n(707).i8},"*"),this._tpcCheck()}}},{key:"_tpcCheck",value:function(){var e,t,n="enabled",r=document.cookie;r&&(e=r.split(";").map((function(e){return e.trim()})).find((function(e){return"luigiCookie=true"==e}))),"luigiCookie=true"===e&&(t=e.split("=")[0],document.cookie=t+"=; Max-Age=-99999999;"),document.cookie="luigiCookie=true; SameSite=None; Secure",(r=document.cookie)&&(e=r.split(";").map((function(e){return e.trim()})).find((function(e){return"luigiCookie=true"==e}))),"luigiCookie=true"===e?(window.parent.postMessage({msg:"luigi.third-party-cookie",tpc:n},"*"),document.cookie=t+"=; Max-Age=-99999999;"):(n="disabled",window.parent.postMessage({msg:"luigi.third-party-cookie",tpc:n},"*"),console.warn("Third party cookies are not supported!"))}},{key:"_callAllFns",value:function(e,t,n){for(var r in e)e.hasOwnProperty(r)&&s.isFunction(e[r])&&e[r](t,n)}},{key:"_notifyInit",value:function(e){this._callAllFns(this._onInitFns,this.currentContext.context,e)}},{key:"_notifyUpdate",value:function(){this._callAllFns(this._onContextUpdatedFns,this.currentContext.context)}},{key:"_notifyInactive",value:function(){this._callAllFns(this._onInactiveFns)}},{key:"setCurrentContext",value:function(e){this.currentContext=e}},{key:"addInitListener",value:function(e){var t=s.getRandomId();return this._onInitFns[t]=e,this.luigiInitialized&&s.isFunction(e)&&e(this.currentContext.context,s.getLuigiCoreDomain()),t}},{key:"removeInitListener",value:function(e){return!!this._onInitFns[e]&&(this._onInitFns[e]=void 0,!0)}},{key:"addContextUpdateListener",value:function(e){var t=s.getRandomId();return this._onContextUpdatedFns[t]=e,this.luigiInitialized&&s.isFunction(e)&&e(this.currentContext.context),t}},{key:"removeContextUpdateListener",value:function(e){return!!this._onContextUpdatedFns[e]&&(this._onContextUpdatedFns[e]=void 0,!0)}},{key:"addInactiveListener",value:function(e){var t=s.getRandomId();return this._onInactiveFns[t]=e,t}},{key:"removeInactiveListener",value:function(e){return!!this._onInactiveFns[e]&&(this._onInactiveFns[e]=void 0,!0)}},{key:"addCustomMessageListener",value:function(e,t){return s.addEventListener(e,(function(e,n){return t(e,n)}))}},{key:"removeCustomMessageListener",value:function(e){return s.removeEventListener(e)}},{key:"getToken",value:function(){return this.authData.accessToken}},{key:"getContext",value:function(){return this.getEventData()}},{key:"getEventData",value:function(){return this.currentContext.context}},{key:"getActiveFeatureToggles",value:function(){return this.currentContext.internal.activeFeatureToggleList}},{key:"addNodeParams",value:function(e){var t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];e&&s.sendPostMessageToLuigiCore({msg:"luigi.addNodeParams",data:e,keepBrowserHistory:t})}},{key:"getNodeParams",value:function(){return arguments.length>0&&void 0!==arguments[0]&&arguments[0]?s.deSanitizeParamsMap(this.currentContext.nodeParams):this.currentContext.nodeParams}},{key:"getPathParams",value:function(){return this.currentContext.pathParams}},{key:"getCoreSearchParams",value:function(){return this.currentContext.searchParams||{}}},{key:"addCoreSearchParams",value:function(e){var t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];e&&s.sendPostMessageToLuigiCore({msg:"luigi.addSearchParams",data:e,keepBrowserHistory:t})}},{key:"getClientPermissions",value:function(){return this.currentContext.internal.clientPermissions||{}}},{key:"setTargetOrigin",value:function(e){s.setTargetOrigin(e)}},{key:"sendCustomMessage",value:function(e){var t=s.convertCustomMessageUserToInternal(e);s.sendPostMessageToLuigiCore(t)}},{key:"getUserSettings",value:function(){return this.currentContext.internal.userSettings}},{key:"getAnchor",value:function(){return this.currentContext.internal.anchor||""}},{key:"setAnchor",value:function(e){s.sendPostMessageToLuigiCore({msg:"luigi.setAnchor",anchor:e})}},{key:"setViewGroupData",value:function(e){s.sendPostMessageToLuigiCore({msg:"luigi.setVGData",data:e})}}],r&&l(t.prototype,r),Object.defineProperty(t,"prototype",{writable:!1}),u}(o),y=new d;function p(e){return p="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},p(e)}function g(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,(void 0,o=function(e,t){if("object"!==p(e)||null===e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var r=n.call(e,"string");if("object"!==p(r))return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(e)}(r.key),"symbol"===p(o)?o:String(o)),r)}var o}function m(e,t){return m=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(e,t){return e.__proto__=t,e},m(e,t)}function h(e){return h=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(e){return e.__proto__||Object.getPrototypeOf(e)},h(e)}var b=function(e){!function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&m(e,t)}(a,e);var t,n,r,o,i=(r=a,o=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],(function(){}))),!0}catch(e){return!1}}(),function(){var e,t=h(r);if(o){var n=h(this).constructor;e=Reflect.construct(t,arguments,n)}else e=t.apply(this,arguments);return function(e,t){if(t&&("object"===p(t)||"function"==typeof t))return t;if(void 0!==t)throw new TypeError("Derived constructors may only return object or undefined");return function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e)}(this,e)});function a(e){var t;return function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,a),(t=i.call(this)).validSplitViewEvents=["expand","collapse","resize","close"],t.splitView={exists:!0,size:40,collapsed:!1},Object.assign(t.splitView,e),t.splitView.listeners=[s.addEventListener("luigi.navigation.splitview.internal",(function(e){Object.assign(t.splitView,e.data.data)}))],t.on("resize",(function(e){t.splitView.size=e})),t.on("close",(function(){t.splitView.listeners.forEach((function(e){return s.removeEventListener(e)}))})),t}return t=a,(n=[{key:"sendSplitViewEvent",value:function(e,t){s.sendPostMessageToLuigiCore({msg:"luigi.navigation.splitview.".concat(e),data:t})}},{key:"collapse",value:function(){this.sendSplitViewEvent("collapse")}},{key:"expand",value:function(){this.sendSplitViewEvent("expand")}},{key:"close",value:function(){this.sendSplitViewEvent("close")}},{key:"setSize",value:function(e){this.sendSplitViewEvent("resize",e)}},{key:"on",value:function(e,t){if(!this.validSplitViewEvents.includes(e))return console.warn(e+" is not a valid split view event"),!1;var n=s.addEventListener("luigi.navigation.splitview.".concat(e,".ok"),(function(e){var n="number"==typeof e.data.data?e.data.data:void 0;t(n)}));return this.splitView.listeners.push(n),n}},{key:"removeEventListener",value:function(e){return s.removeEventListener(e)}},{key:"exists",value:function(){return this.splitView.exists}},{key:"getSize",value:function(){return this.splitView.size}},{key:"isCollapsed",value:function(){return this.splitView.collapsed}},{key:"isExpanded",value:function(){return!this.splitView.collapsed}}])&&g(t.prototype,n),Object.defineProperty(t,"prototype",{writable:!1}),a}(o);function w(e){return w="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},w(e)}function k(e,t){if(e){if("string"==typeof e)return P(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);return"Object"===n&&e.constructor&&(n=e.constructor.name),"Map"===n||"Set"===n?Array.from(e):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?P(e,t):void 0}}function P(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}function C(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,(void 0,o=function(e,t){if("object"!==w(e)||null===e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var r=n.call(e,"string");if("object"!==w(r))return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(e)}(r.key),"symbol"===w(o)?o:String(o)),r)}var o}function S(e,t){return S=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(e,t){return e.__proto__=t,e},S(e,t)}function x(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}function O(e){return O=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(e){return e.__proto__||Object.getPrototypeOf(e)},O(e)}var j=function(e){!function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&S(e,t)}(a,e);var t,n,r,o,i=(r=a,o=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],(function(){}))),!0}catch(e){return!1}}(),function(){var e,t=O(r);if(o){var n=O(this).constructor;e=Reflect.construct(t,arguments,n)}else e=t.apply(this,arguments);return function(e,t){if(t&&("object"===w(t)||"function"==typeof t))return t;if(void 0!==t)throw new TypeError("Derived constructors may only return object or undefined");return x(e)}(this,e)});function a(e){var t;return function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,a),t=i.call(this),Object.assign(x(t),e),t.options={preserveView:!1,nodeParams:{},errorSkipNavigation:!1,fromContext:null,fromClosestContext:!1,fromVirtualTreeRoot:!1,fromParent:!1,relative:!1,link:"",newTab:!1,preserveQueryParams:!1,anchor:"",preventContextUpdate:!1,preventHistoryEntry:!1},t}return t=a,n=[{key:"navigate",value:function(e,t,n,r,o,i){if(this.options.errorSkipNavigation)this.options.errorSkipNavigation=!1;else{r&&o&&i&&console.warn("modalSettings, splitViewSettings and drawerSettings cannot be used together. Only modal setting will be taken into account."),this.options.preserveView=n;var a="/"!==e[0];if("/"===e&&(r||o||i))console.warn("Navigation with an absolute path prevented.");else{var u={msg:"luigi.navigation.open",sessionId:t,params:Object.assign(this.options,{link:e,relative:a,intent:s.hasIntent(e),modal:r,splitView:o,drawer:i})};s.sendPostMessageToLuigiCore(u)}}}},{key:"updateModalPathInternalNavigation",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(e){var r={msg:"luigi.navigation.updateModalDataPath",params:Object.assign(this.options,{link:e,modal:t,history:n})};s.sendPostMessageToLuigiCore(r)}else console.warn("Updating path of the modal upon internal navigation prevented. No path specified.")}},{key:"navigateToIntent",value:function(e){var t,n,r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},o="#?intent=";if(o+=e,r){var i=Object.entries(r);if(i.length>0){o+="?";var a,u=function(e,t){var n="undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(!n){if(Array.isArray(e)||(n=k(e))){n&&(e=n);var r=0,o=function(){};return{s:o,n:function(){return r>=e.length?{done:!0}:{done:!1,value:e[r++]}},e:function(e){throw e},f:o}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var i,a=!0,u=!1;return{s:function(){n=n.call(e)},n:function(){var e=n.next();return a=e.done,e},e:function(e){u=!0,i=e},f:function(){try{a||null==n.return||n.return()}finally{if(u)throw i}}}}(i);try{for(u.s();!(a=u.n()).done;){var s=(t=a.value,n=2,function(e){if(Array.isArray(e))return e}(t)||function(e,t){var n=null==e?null:"undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(null!=n){var r,o,i,a,u=[],s=!0,c=!1;try{if(i=(n=n.call(e)).next,0===t){if(Object(n)!==n)return;s=!1}else for(;!(s=(r=i.call(n)).done)&&(u.push(r.value),u.length!==t);s=!0);}catch(e){c=!0,o=e}finally{try{if(!s&&null!=n.return&&(a=n.return(),Object(a)!==a))return}finally{if(c)throw o}}return u}}(t,n)||k(t,n)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}());o+=s[0]+"="+s[1]+"&"}}catch(e){u.e(e)}finally{u.f()}o=o.slice(0,-1)}}this.navigate(o)}},{key:"openAsModal",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};this.navigate(e,0,!0,t)}},{key:"updateModalSettings",value:function(){var e={msg:"luigi.navigation.updateModalSettings",updatedModalSettings:arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},addHistoryEntry:arguments.length>1&&void 0!==arguments[1]&&arguments[1]};s.sendPostMessageToLuigiCore(e)}},{key:"openAsSplitView",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};return this.navigate(e,0,!0,void 0,t),new b(t)}},{key:"openAsDrawer",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};this.navigate(e,0,!0,void 0,void 0,t)}},{key:"fromContext",value:function(e){return this.currentContext.context.parentNavigationContexts&&-1!==this.currentContext.context.parentNavigationContexts.indexOf(e)?this.options.fromContext=e:(this.options.errorSkipNavigation=!0,console.error("Navigation not possible, navigationContext "+e+" not found.")),this}},{key:"fromClosestContext",value:function(){return this.currentContext&&this.currentContext.context.parentNavigationContexts.length>0?(this.options.fromContext=null,this.options.fromClosestContext=!0):console.error("Navigation not possible, no parent navigationContext found."),this}},{key:"fromVirtualTreeRoot",value:function(){return this.options.fromContext=null,this.options.fromClosestContext=!1,this.options.fromVirtualTreeRoot=!0,this}},{key:"fromParent",value:function(){return this.options.fromParent=!0,this}},{key:"withParams",value:function(e){return e&&Object.assign(this.options.nodeParams,e),this}},{key:"withOptions",value:function(e){return s.isObject(e)?(void 0!==e.preventHistoryEntry&&(this.options.preventHistoryEntry=e.preventHistoryEntry),void 0!==e.preventContextUpdate&&(this.options.preventContextUpdate=e.preventContextUpdate),this):this}},{key:"pathExists",value:function(e){var t=s.getRandomId(),n=this.getPromise("pathExistsPromises")||{};n[t]={resolveFn:function(){},then:function(e){this.resolveFn=e}},this.setPromise("pathExistsPromises",n),s.addEventListener("luigi.navigation.pathExists.answer",function(e,n){var r=e.data.data,o=this.getPromise("pathExistsPromises")||{};r.correlationId===t&&(o[r.correlationId]&&(o[r.correlationId].resolveFn(r.pathExists),delete o[r.correlationId],this.setPromise("pathExistsPromises",o)),s.removeEventListener(n))}.bind(this));var r={msg:"luigi.navigation.pathExists",data:Object.assign(this.options,{id:t,link:e,intent:s.hasIntent(e),relative:"/"!==e[0]})};return s.sendPostMessageToLuigiCore(r),n[t]}},{key:"hasBack",value:function(){return!!this.currentContext.internal.modal||0!==this.currentContext.internal.viewStackSize}},{key:"goBack",value:function(e){s.sendPostMessageToLuigiCore({msg:"luigi.navigation.back",goBackContext:e&&JSON.stringify(e)})}},{key:"withoutSync",value:function(){return this.options.withoutSync=!0,this}},{key:"newTab",value:function(){return this.options.newTab=!0,this}},{key:"preserveQueryParams",value:function(){var e=arguments.length>0&&void 0!==arguments[0]&&arguments[0];return this.options.preserveQueryParams=e,this}},{key:"getCurrentRoute",value:function(){var e=this,t=s.getRandomId(),n=this.getPromise("getCurrentRoute")||{};return n[t]={resolveFn:function(){},then:function(e){this.resolveFn=e}},this.setPromise("getCurrentRoute",n),s.addEventListener("luigi.navigation.currentRoute.answer",(function(n,r){var o=n.data.data,i=e.getPromise("getCurrentRoute")||{};o.correlationId===t&&(i[o.correlationId]&&(i[o.correlationId].resolveFn(o.route),delete i[o.correlationId],e.setPromise("getCurrentRoute",i)),s.removeEventListener(r)),s.removeEventListener(r)})),s.sendPostMessageToLuigiCore({msg:"luigi.navigation.currentRoute",data:Object.assign(this.options,{id:t})}),n[t]}}],n&&C(t.prototype,n),Object.defineProperty(t,"prototype",{writable:!1}),a}(o);function E(e){return E="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},E(e)}function L(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,(void 0,o=function(e,t){if("object"!==E(e)||null===e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var r=n.call(e,"string");if("object"!==E(r))return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(e)}(r.key),"symbol"===E(o)?o:String(o)),r)}var o}function I(e,t){return I=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(e,t){return e.__proto__=t,e},I(e,t)}function T(e){return T=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(e){return e.__proto__||Object.getPrototypeOf(e)},T(e)}var M=new(function(e){!function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&I(e,t)}(a,e);var t,n,r,o,i=(r=a,o=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],(function(){}))),!0}catch(e){return!1}}(),function(){var e,t=T(r);if(o){var n=T(this).constructor;e=Reflect.construct(t,arguments,n)}else e=t.apply(this,arguments);return function(e,t){if(t&&("object"===E(t)||"function"==typeof t))return t;if(void 0!==t)throw new TypeError("Derived constructors may only return object or undefined");return function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e)}(this,e)});function a(){var e;return function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,a),e=i.call(this),s.addEventListener("luigi.current-locale-changed",(function(e){var t;e.data.currentLocale&&null!==(t=y.currentContext)&&void 0!==t&&t.internal&&(y.currentContext.internal.currentLocale=e.data.currentLocale,y._notifyUpdate())})),e}return t=a,(n=[{key:"showLoadingIndicator",value:function(){s.sendPostMessageToLuigiCore({msg:"luigi.show-loading-indicator"})}},{key:"hideLoadingIndicator",value:function(){s.sendPostMessageToLuigiCore({msg:"luigi.hide-loading-indicator"})}},{key:"closeCurrentModal",value:function(){s.sendPostMessageToLuigiCore({msg:"luigi.close-modal"})}},{key:"addBackdrop",value:function(){s.sendPostMessageToLuigiCore({msg:"luigi.add-backdrop"})}},{key:"removeBackdrop",value:function(){s.sendPostMessageToLuigiCore({msg:"luigi.remove-backdrop"})}},{key:"setDirtyStatus",value:function(e){s.sendPostMessageToLuigiCore({msg:"luigi.set-page-dirty",dirty:e})}},{key:"showConfirmationModal",value:function(e){var t=this;s.addEventListener("luigi.ux.confirmationModal.hide",(function(e,n){t.hideConfirmationModal(e.data.data),s.removeEventListener(n)})),s.sendPostMessageToLuigiCore({msg:"luigi.ux.confirmationModal.show",data:{settings:e}});var n={};return n.promise=new Promise((function(e,t){n.resolveFn=e,n.rejectFn=t})),this.setPromise("confirmationModal",n),n.promise}},{key:"hideConfirmationModal",value:function(e){var t=this.getPromise("confirmationModal");t&&(e.confirmed?t.resolveFn():t.rejectFn(),this.setPromise("confirmationModal",void 0))}},{key:"showAlert",value:function(e){var t=this;e.id=s.getRandomId(),s.addEventListener("luigi.ux.alert.hide",(function(n,r){n.data.id===e.id&&(t.hideAlert(n.data),s.removeEventListener(r))})),(null==e?void 0:e.closeAfter)<100&&(console.warn("Message with id='".concat(e.id,"' has too small 'closeAfter' value. It needs to be at least 100ms.")),e.closeAfter=void 0),s.sendPostMessageToLuigiCore({msg:"luigi.ux.alert.show",data:{settings:e}});var n=this.getPromise("alerts")||{};return n[e.id]={},n[e.id].promise=new Promise((function(t){n[e.id].resolveFn=t})),this.setPromise("alerts",n),n[e.id].promise}},{key:"hideAlert",value:function(e){var t=e.id,n=e.dismissKey,r=this.getPromise("alerts");t&&r[t]&&(r[t].resolveFn(n||t),delete r[t],this.setPromise("alerts",r))}},{key:"getCurrentLocale",value:function(){var e,t;return null===(e=y.currentContext)||void 0===e||null===(t=e.internal)||void 0===t?void 0:t.currentLocale}},{key:"setCurrentLocale",value:function(e){e&&s.sendPostMessageToLuigiCore({msg:"luigi.ux.set-current-locale",data:{currentLocale:e}})}},{key:"isSplitView",value:function(){var e,t;return null===(e=y.currentContext)||void 0===e||null===(t=e.internal)||void 0===t?void 0:t.splitView}},{key:"isModal",value:function(){var e,t;return null===(e=y.currentContext)||void 0===e||null===(t=e.internal)||void 0===t?void 0:t.modal}},{key:"isDrawer",value:function(){var e,t;return null===(e=y.currentContext)||void 0===e||null===(t=e.internal)||void 0===t?void 0:t.drawer}},{key:"getCurrentTheme",value:function(){var e,t;return null===(e=y.currentContext)||void 0===e||null===(t=e.internal)||void 0===t?void 0:t.currentTheme}},{key:"getCSSVariables",value:function(){var e,t;return(null===(e=y.currentContext)||void 0===e||null===(t=e.internal)||void 0===t?void 0:t.cssVariables)||{}}},{key:"applyCSS",value:function(){var e,t;document.querySelectorAll("head style[luigi-injected]").forEach((function(e){e.remove()}));var n=null===(e=y.currentContext)||void 0===e||null===(t=e.internal)||void 0===t?void 0:t.cssVariables;if(n){var r=":root {\n";Object.keys(n).forEach((function(e){var t=n[e];r+=(e.startsWith("--")?"":"--")+e+":"+t+";\n"})),r+="}";var o=document.createElement("style");o.setAttribute("luigi-injected",!0),o.innerHTML=r,document.head.appendChild(o)}}}])&&L(t.prototype,n),Object.defineProperty(t,"prototype",{writable:!1}),a}(o));function _(e){return _="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},_(e)}function R(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function A(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,(void 0,o=function(e,t){if("object"!==_(e)||null===e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var r=n.call(e,"string");if("object"!==_(r))return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(e)}(r.key),"symbol"===_(o)?o:String(o)),r)}var o}function F(e,t,n){return t&&A(e.prototype,t),n&&A(e,n),Object.defineProperty(e,"prototype",{writable:!1}),e}function V(e,t){return V=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(e,t){return e.__proto__=t,e},V(e,t)}function D(e){return D=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(e){return e.__proto__||Object.getPrototypeOf(e)},D(e)}var U=new Map,z=function(e){!function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&V(e,t)}(o,e);var t,n,r=(t=o,n=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],(function(){}))),!0}catch(e){return!1}}(),function(){var e,r=D(t);if(n){var o=D(this).constructor;e=Reflect.construct(r,arguments,o)}else e=r.apply(this,arguments);return function(e,t){if(t&&("object"===_(t)||"function"==typeof t))return t;if(void 0!==t)throw new TypeError("Derived constructors may only return object or undefined");return function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e)}(this,e)});function o(){var e;return R(this,o),(e=r.call(this)).storageEventProcessor=new N,s.addEventListener("storage",(function(t,n){return e.storageEventProcessor.processEvent(t,n)})),e}return F(o,[{key:"setItem",value:function(e,t){var n=this;return new Promise((function(r,o){n.storageEventProcessor.execute(r,o,"setItem",{key:e,value:t})}))}},{key:"getItem",value:function(e){var t=this;return new Promise((function(n,r){t.storageEventProcessor.execute(n,r,"getItem",{key:e})}))}},{key:"removeItem",value:function(e){var t=this;return new Promise((function(n,r){t.storageEventProcessor.execute(n,r,"removeItem",{key:e})}))}},{key:"clear",value:function(){var e=this;return new Promise((function(t,n){e.storageEventProcessor.execute(t,n,"clear",{})}))}},{key:"has",value:function(e){var t=this;return new Promise((function(n,r){t.storageEventProcessor.execute(n,r,"has",{key:e})}))}},{key:"getAllKeys",value:function(){var e=this;return new Promise((function(t,n){e.storageEventProcessor.execute(t,n,"getAllKeys",{})}))}}]),o}(o),N=function(){function e(){R(this,e)}return F(e,[{key:"processEvent",value:function(e,t){try{var n=e.data.data;if(!U.has(n.id))return void console.log("Impossible to find Promise method for message "+n.id);var r=U.get(n.id);"ERROR"===n.status?r.reject(n.result):r.resolve(n.result),U.delete(n.id)}catch(e){console.error(e)}}},{key:"waitForSyncResult",value:function(e){for(var t=(new Date).getTime();!syncOperation.has(e);)if((new Date).getTime()-t>1e4)throw"Storage operation is taking more than 1 second...Some problem with Luigi Core communication";var n=syncOperation.get(e);return U.delete(e),n}},{key:"execute",value:function(e,t,n,r){var o=s.getRandomId();this.createPendingOperation(o,e,t),this.sendMessage(o,n,r)}},{key:"createPendingOperation",value:function(e,t,n){U.set(e,{resolve:t,reject:n})}},{key:"sendMessage",value:function(e,t,n){s.sendPostMessageToLuigiCore({msg:"storage",data:{id:e,operation:t,params:n}})}}]),e}(),B=new z;function H(e){return H="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},H(e)}function K(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,(void 0,o=function(e,t){if("object"!==H(e)||null===e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var r=n.call(e,"string");if("object"!==H(r))return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(e)}(r.key),"symbol"===H(o)?o:String(o)),r)}var o}var G=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),window!==window.top&&("true"!==window.document.head.getAttribute("disable-luigi-history-handling")&&(history.pushState=history.replaceState.bind(history)),"true"!==window.document.head.getAttribute("disable-luigi-runtime-error-handling")&&window.addEventListener("error",(function(e){var t={msg:"luigi-runtime-error-handling",errorObj:{filename:e.filename,message:e.message,lineno:e.lineno,colno:e.colno,error:e.error}};s.sendPostMessageToLuigiCore(t)})))}var t,n;return t=e,(n=[{key:"addInitListener",value:function(e){return y.addInitListener(e)}},{key:"removeInitListener",value:function(e){return y.removeInitListener(e)}},{key:"addContextUpdateListener",value:function(e){return y.addContextUpdateListener(e)}},{key:"removeContextUpdateListener",value:function(e){return y.removeContextUpdateListener(e)}},{key:"getToken",value:function(){return y.getToken()}},{key:"getEventData",value:function(){return y.getEventData()}},{key:"getContext",value:function(){return y.getContext()}},{key:"addNodeParams",value:function(e,t){return y.addNodeParams(e,t)}},{key:"getNodeParams",value:function(e){return y.getNodeParams(e)}},{key:"getActiveFeatureToggles",value:function(){return y.getActiveFeatureToggles()}},{key:"getPathParams",value:function(){return y.getPathParams()}},{key:"getCoreSearchParams",value:function(){return y.getCoreSearchParams()}},{key:"addCoreSearchParams",value:function(e,t){return y.addCoreSearchParams(e,t)}},{key:"getClientPermissions",value:function(){return y.getClientPermissions()}},{key:"sendCustomMessage",value:function(e){return y.sendCustomMessage(e)}},{key:"addCustomMessageListener",value:function(e,t){return y.addCustomMessageListener(e,t)}},{key:"removeCustomMessageListener",value:function(e){return y.removeCustomMessageListener(e)}},{key:"addInactiveListener",value:function(e,t){return y.addInactiveListener(e,t)}},{key:"removeInactiveListener",value:function(e){return y.removeInactiveListener(e)}},{key:"setTargetOrigin",value:function(e){return y.setTargetOrigin(e)}},{key:"getUserSettings",value:function(){return y.getUserSettings()}},{key:"isLuigiClientInitialized",value:function(){return y.isLuigiClientInitialized()}},{key:"luigiClientInit",value:function(){return y.luigiClientInit()}},{key:"getAnchor",value:function(){return y.getAnchor()}},{key:"setAnchor",value:function(e){return y.setAnchor(e)}},{key:"setViewGroupData",value:function(e){return y.setViewGroupData(e)}},{key:"linkManager",value:function(){return new j({currentContext:y.currentContext})}},{key:"uxManager",value:function(){return M}},{key:"lifecycleManager",value:function(){return y}},{key:"storageManager",value:function(){return B}}])&&K(t.prototype,n),Object.defineProperty(t,"prototype",{writable:!1}),e}(),Q=G=new G}(),r.default}()}));
 //# sourceMappingURL=luigi-client.js.map
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5735,19 +6049,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   useRouteMatch: () => (/* binding */ useRouteMatch),
 /* harmony export */   withRouter: () => (/* binding */ withRouter)
 /* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(24);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(23);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var history__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(30);
-/* harmony import */ var tiny_warning__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(23);
-/* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
-/* harmony import */ var path_to_regexp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(16);
+/* harmony import */ var tiny_warning__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(22);
+/* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13);
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
+/* harmony import */ var path_to_regexp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(15);
 /* harmony import */ var path_to_regexp__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(path_to_regexp__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(18);
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(21);
-/* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(22);
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(17);
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(20);
+/* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(21);
 /* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_7__);
 
 
@@ -5868,7 +6183,7 @@ function createReactContext(defaultValue, calculateChangedBits) {
     };
 
     return Provider;
-  }(react__WEBPACK_IMPORTED_MODULE_1__.Component);
+  }((react__WEBPACK_IMPORTED_MODULE_1___default().Component));
 
   Provider.childContextTypes = (_Provider$childContex = {}, _Provider$childContex[contextProp] = (prop_types__WEBPACK_IMPORTED_MODULE_9___default().object).isRequired, _Provider$childContex);
 
@@ -5938,7 +6253,7 @@ function createReactContext(defaultValue, calculateChangedBits) {
     };
 
     return Consumer;
-  }(react__WEBPACK_IMPORTED_MODULE_1__.Component);
+  }((react__WEBPACK_IMPORTED_MODULE_1___default().Component));
 
   Consumer.contextTypes = (_Consumer$contextType = {}, _Consumer$contextType[contextProp] = (prop_types__WEBPACK_IMPORTED_MODULE_9___default().object), _Consumer$contextType);
   return {
@@ -5948,7 +6263,7 @@ function createReactContext(defaultValue, calculateChangedBits) {
 }
 
 // MIT License
-var createContext = react__WEBPACK_IMPORTED_MODULE_1__.createContext || createReactContext;
+var createContext = (react__WEBPACK_IMPORTED_MODULE_1___default().createContext) || createReactContext;
 
 // TODO: Replace with React.createContext once we can assume React 16+
 
@@ -6041,21 +6356,21 @@ var Router = /*#__PURE__*/function (_React$Component) {
   };
 
   _proto.render = function render() {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(context.Provider, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(context.Provider, {
       value: {
         history: this.props.history,
         location: this.state.location,
         match: Router.computeRootMatch(this.state.location.pathname),
         staticContext: this.props.staticContext
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(historyContext.Provider, {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(historyContext.Provider, {
       children: this.props.children || null,
       value: this.props.history
     }));
   };
 
   return Router;
-}(react__WEBPACK_IMPORTED_MODULE_1__.Component);
+}((react__WEBPACK_IMPORTED_MODULE_1___default().Component));
 
 if (process.env.NODE_ENV !== "production") {
   Router.propTypes = {
@@ -6091,14 +6406,14 @@ var MemoryRouter = /*#__PURE__*/function (_React$Component) {
   var _proto = MemoryRouter.prototype;
 
   _proto.render = function render() {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(Router, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(Router, {
       history: this.history,
       children: this.props.children
     });
   };
 
   return MemoryRouter;
-}(react__WEBPACK_IMPORTED_MODULE_1__.Component);
+}((react__WEBPACK_IMPORTED_MODULE_1___default().Component));
 
 if (process.env.NODE_ENV !== "production") {
   MemoryRouter.propTypes = {
@@ -6140,7 +6455,7 @@ var Lifecycle = /*#__PURE__*/function (_React$Component) {
   };
 
   return Lifecycle;
-}(react__WEBPACK_IMPORTED_MODULE_1__.Component);
+}((react__WEBPACK_IMPORTED_MODULE_1___default().Component));
 
 /**
  * The public API for prompting the user before navigating away from a screen.
@@ -6150,11 +6465,11 @@ function Prompt(_ref) {
   var message = _ref.message,
       _ref$when = _ref.when,
       when = _ref$when === void 0 ? true : _ref$when;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(context.Consumer, null, function (context) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(context.Consumer, null, function (context) {
     !context ? process.env.NODE_ENV !== "production" ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_2__["default"])(false, "You should not use <Prompt> outside a <Router>") : (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_2__["default"])(false) : void 0;
     if (!when || context.staticContext) return null;
     var method = context.history.block;
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(Lifecycle, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(Lifecycle, {
       onMount: function onMount(self) {
         self.release = method(message);
       },
@@ -6223,7 +6538,7 @@ function Redirect(_ref) {
       to = _ref.to,
       _ref$push = _ref.push,
       push = _ref$push === void 0 ? false : _ref$push;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(context.Consumer, null, function (context) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(context.Consumer, null, function (context) {
     !context ? process.env.NODE_ENV !== "production" ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_2__["default"])(false, "You should not use <Redirect> outside a <Router>") : (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_2__["default"])(false) : void 0;
     var history = context.history,
         staticContext = context.staticContext;
@@ -6238,7 +6553,7 @@ function Redirect(_ref) {
       return null;
     }
 
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(Lifecycle, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(Lifecycle, {
       onMount: function onMount() {
         method(location);
       },
@@ -6345,7 +6660,7 @@ function matchPath(pathname, options) {
 }
 
 function isEmptyChildren(children) {
-  return react__WEBPACK_IMPORTED_MODULE_1__.Children.count(children) === 0;
+  return react__WEBPACK_IMPORTED_MODULE_1___default().Children.count(children) === 0;
 }
 
 function evalChildrenDev(children, props, path) {
@@ -6370,7 +6685,7 @@ var Route = /*#__PURE__*/function (_React$Component) {
   _proto.render = function render() {
     var _this = this;
 
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(context.Consumer, null, function (context$1) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(context.Consumer, null, function (context$1) {
       !context$1 ? process.env.NODE_ENV !== "production" ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_2__["default"])(false, "You should not use <Route> outside a <Router>") : (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_2__["default"])(false) : void 0;
       var location = _this.props.location || context$1.location;
       var match = _this.props.computedMatch ? _this.props.computedMatch // <Switch> already computed the match for us
@@ -6391,14 +6706,14 @@ var Route = /*#__PURE__*/function (_React$Component) {
         children = null;
       }
 
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(context.Provider, {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(context.Provider, {
         value: props
-      }, props.match ? children ? typeof children === "function" ? process.env.NODE_ENV !== "production" ? evalChildrenDev(children, props, _this.props.path) : children(props) : children : component ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(component, props) : render ? render(props) : null : typeof children === "function" ? process.env.NODE_ENV !== "production" ? evalChildrenDev(children, props, _this.props.path) : children(props) : null);
+      }, props.match ? children ? typeof children === "function" ? process.env.NODE_ENV !== "production" ? evalChildrenDev(children, props, _this.props.path) : children(props) : children : component ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(component, props) : render ? render(props) : null : typeof children === "function" ? process.env.NODE_ENV !== "production" ? evalChildrenDev(children, props, _this.props.path) : children(props) : null);
     });
   };
 
   return Route;
-}(react__WEBPACK_IMPORTED_MODULE_1__.Component);
+}((react__WEBPACK_IMPORTED_MODULE_1___default().Component));
 
 if (process.env.NODE_ENV !== "production") {
   Route.propTypes = {
@@ -6535,14 +6850,14 @@ var StaticRouter = /*#__PURE__*/function (_React$Component) {
       listen: this.handleListen,
       block: this.handleBlock
     };
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(Router, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_3__["default"])({}, rest, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(Router, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_3__["default"])({}, rest, {
       history: history,
       staticContext: context
     }));
   };
 
   return StaticRouter;
-}(react__WEBPACK_IMPORTED_MODULE_1__.Component);
+}((react__WEBPACK_IMPORTED_MODULE_1___default().Component));
 
 if (process.env.NODE_ENV !== "production") {
   StaticRouter.propTypes = {
@@ -6572,7 +6887,7 @@ var Switch = /*#__PURE__*/function (_React$Component) {
   _proto.render = function render() {
     var _this = this;
 
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(context.Consumer, null, function (context) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(context.Consumer, null, function (context) {
       !context ? process.env.NODE_ENV !== "production" ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_2__["default"])(false, "You should not use <Switch> outside a <Router>") : (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_2__["default"])(false) : void 0;
       var location = _this.props.location || context.location;
       var element, match; // We use React.Children.forEach instead of React.Children.toArray().find()
@@ -6580,8 +6895,8 @@ var Switch = /*#__PURE__*/function (_React$Component) {
       // to trigger an unmount/remount for two <Route>s that render the same
       // component at different URLs.
 
-      react__WEBPACK_IMPORTED_MODULE_1__.Children.forEach(_this.props.children, function (child) {
-        if (match == null && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.isValidElement(child)) {
+      react__WEBPACK_IMPORTED_MODULE_1___default().Children.forEach(_this.props.children, function (child) {
+        if (match == null && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().isValidElement(child)) {
           element = child;
           var path = child.props.path || child.props.from;
           match = path ? matchPath(location.pathname, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_3__["default"])({}, child.props, {
@@ -6589,7 +6904,7 @@ var Switch = /*#__PURE__*/function (_React$Component) {
           })) : context.match;
         }
       });
-      return match ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.cloneElement(element, {
+      return match ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().cloneElement(element, {
         location: location,
         computedMatch: match
       }) : null;
@@ -6597,7 +6912,7 @@ var Switch = /*#__PURE__*/function (_React$Component) {
   };
 
   return Switch;
-}(react__WEBPACK_IMPORTED_MODULE_1__.Component);
+}((react__WEBPACK_IMPORTED_MODULE_1___default().Component));
 
 if (process.env.NODE_ENV !== "production") {
   Switch.propTypes = {
@@ -6622,9 +6937,9 @@ function withRouter(Component) {
     var wrappedComponentRef = props.wrappedComponentRef,
         remainingProps = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__["default"])(props, ["wrappedComponentRef"]);
 
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(context.Consumer, null, function (context) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(context.Consumer, null, function (context) {
       !context ? process.env.NODE_ENV !== "production" ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_2__["default"])(false, "You should not use <" + displayName + " /> outside a <Router>") : (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_2__["default"])(false) : void 0;
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(Component, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_3__["default"])({}, remainingProps, context, {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(Component, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_3__["default"])({}, remainingProps, context, {
         ref: wrappedComponentRef
       }));
     });
@@ -6642,7 +6957,7 @@ function withRouter(Component) {
   return hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_7___default()(C, Component);
 }
 
-var useContext = react__WEBPACK_IMPORTED_MODULE_1__.useContext;
+var useContext = (react__WEBPACK_IMPORTED_MODULE_1___default().useContext);
 function useHistory() {
   if (process.env.NODE_ENV !== "production") {
     !(typeof useContext === "function") ? process.env.NODE_ENV !== "production" ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_2__["default"])(false, "You must use React >= 16.8 in order to use useHistory()") : (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_2__["default"])(false) : void 0;
@@ -6702,7 +7017,7 @@ if (process.env.NODE_ENV !== "production") {
 
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -6710,7 +7025,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ _inheritsLoose)
 /* harmony export */ });
-/* harmony import */ var _setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
+/* harmony import */ var _setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
 
 function _inheritsLoose(subClass, superClass) {
   subClass.prototype = Object.create(superClass.prototype);
@@ -6719,7 +7034,7 @@ function _inheritsLoose(subClass, superClass) {
 }
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -6736,7 +7051,7 @@ function _setPrototypeOf(o, p) {
 }
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -6762,7 +7077,7 @@ function invariant(condition, message) {
 
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -6786,10 +7101,10 @@ function _extends() {
 }
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var isarray = __webpack_require__(17)
+var isarray = __webpack_require__(16)
 
 /**
  * Expose `pathToRegexp`.
@@ -7218,7 +7533,7 @@ function pathToRegexp (path, keys, options) {
 
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ ((module) => {
 
 module.exports = Array.isArray || function (arr) {
@@ -7227,21 +7542,21 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(19);
+  module.exports = __webpack_require__(18);
 } else {
-  module.exports = __webpack_require__(20);
+  module.exports = __webpack_require__(19);
 }
 
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -7263,7 +7578,7 @@ exports.isValidElementType=function(a){return"string"===typeof a||"function"===t
 
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -7451,7 +7766,7 @@ exports.typeOf = typeOf;
 
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -7473,13 +7788,13 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 }
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
 
-var reactIs = __webpack_require__(18);
+var reactIs = __webpack_require__(17);
 
 /**
  * Copyright 2015, Yahoo! Inc.
@@ -7583,7 +7898,7 @@ module.exports = hoistNonReactStatics;
 
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -7614,7 +7929,7 @@ function warning(condition, message) {
 
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 /**
@@ -7625,12 +7940,12 @@ function warning(condition, message) {
  */
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactIs = __webpack_require__(18);
+  var ReactIs = __webpack_require__(17);
 
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(25)(ReactIs.isElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(24)(ReactIs.isElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
@@ -7639,7 +7954,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -7652,8 +7967,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 
 
-var ReactIs = __webpack_require__(18);
-var assign = __webpack_require__(8);
+var ReactIs = __webpack_require__(17);
+var assign = __webpack_require__(25);
 
 var ReactPropTypesSecret = __webpack_require__(26);
 var has = __webpack_require__(27);
@@ -8256,6 +8571,103 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 /***/ }),
+/* 25 */
+/***/ ((module) => {
+
+"use strict";
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+
+/* eslint-disable no-unused-vars */
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+
+function toObject(val) {
+	if (val === null || val === undefined) {
+		throw new TypeError('Object.assign cannot be called with null or undefined');
+	}
+
+	return Object(val);
+}
+
+function shouldUseNative() {
+	try {
+		if (!Object.assign) {
+			return false;
+		}
+
+		// Detect buggy property enumeration order in older V8 versions.
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
+		var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
+		test1[5] = 'de';
+		if (Object.getOwnPropertyNames(test1)[0] === '5') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test2 = {};
+		for (var i = 0; i < 10; i++) {
+			test2['_' + String.fromCharCode(i)] = i;
+		}
+		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
+			return test2[n];
+		});
+		if (order2.join('') !== '0123456789') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test3 = {};
+		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
+			test3[letter] = letter;
+		});
+		if (Object.keys(Object.assign({}, test3)).join('') !==
+				'abcdefghijklmnopqrst') {
+			return false;
+		}
+
+		return true;
+	} catch (err) {
+		// We don't expect any of the above to throw, but better to be safe.
+		return false;
+	}
+}
+
+module.exports = shouldUseNative() ? Object.assign : function (target, source) {
+	var from;
+	var to = toObject(target);
+	var symbols;
+
+	for (var s = 1; s < arguments.length; s++) {
+		from = Object(arguments[s]);
+
+		for (var key in from) {
+			if (hasOwnProperty.call(from, key)) {
+				to[key] = from[key];
+			}
+		}
+
+		if (getOwnPropertySymbols) {
+			symbols = getOwnPropertySymbols(from);
+			for (var i = 0; i < symbols.length; i++) {
+				if (propIsEnumerable.call(from, symbols[i])) {
+					to[symbols[i]] = from[symbols[i]];
+				}
+			}
+		}
+	}
+
+	return to;
+};
+
+
+/***/ }),
 /* 26 */
 /***/ ((module) => {
 
@@ -8478,11 +8890,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   locationsAreEqual: () => (/* binding */ locationsAreEqual),
 /* harmony export */   parsePath: () => (/* binding */ parsePath)
 /* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
 /* harmony import */ var resolve_pathname__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31);
 /* harmony import */ var value_equal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(32);
-/* harmony import */ var tiny_warning__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(23);
-/* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
+/* harmony import */ var tiny_warning__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(22);
+/* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(13);
 
 
 
