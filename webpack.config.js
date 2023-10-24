@@ -3,6 +3,14 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
+const mapToFolder = (dependencies, folder) =>
+  dependencies.reduce((acc, dependency) => {
+    return {
+      [dependency]: path.resolve(`${folder}/${dependency}`),
+      ...acc,
+    };
+  }, {});
+
 module.exports = {
   mode: 'none',
   //   devtool: 'source-map',
@@ -16,6 +24,12 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js'],
+    alias: {
+      ...mapToFolder(
+        ['react', 'react-dom', 'react-router-dom', '@luigi-project/client'],
+        './node_modules',
+      ),
+    },
   },
   optimization: {
     minimize: false,
