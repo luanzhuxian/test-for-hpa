@@ -23,10 +23,16 @@ module.exports = {
     chunkFilename: '[name].chunk.js',
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.jsx'],
     alias: {
       ...mapToFolder(
-        ['react', 'react-dom', 'react-router-dom', '@luigi-project/client'],
+        [
+          'react',
+          'react-dom',
+          'react-router-dom',
+          '@luigi-project/client',
+          '@ui5/webcomponents-react',
+        ],
         './node_modules',
       ),
     },
