@@ -56,7 +56,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js)$/,
+        test: /\.(js|jsx)$/,
         exclude(modulePath) {
           //   return /node_modules/.test(modulePath);
           return /node_modules/.test(modulePath) || /hybrid-portal-adapter/.test(modulePath);
@@ -65,7 +65,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              presets: ['@babel/preset-env'],
+              presets: ['@babel/preset-env', '@babel/preset-react'],
             },
           },
         ],

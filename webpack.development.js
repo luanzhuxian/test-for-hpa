@@ -44,10 +44,6 @@ module.exports = {
     allowedHosts: 'all',
     historyApiFallback: false,
     client: {
-      // overlay: {
-      //   errors: true,
-      //   warnings: false
-      // }
       overlay: false,
     },
     devMiddleware: {
@@ -59,26 +55,10 @@ module.exports = {
       },
     },
   },
-  optimization: {
-    minimize: false,
-    // splitChunks: {
-    //   cacheGroups: {
-    //     vendors: {
-    //       name: 'vendors',
-    //       test: /[\\/]eureka[\\/]hybrid-portal-adapter[\\/]node_modules[\\/]/,
-    //       priority: 10,
-    //       chunks: 'initial',
-    //       enforce: true,
-    //     },
-    //   },
-    //   maxAsyncRequests: Infinity,
-    //   maxInitialRequests: Infinity,
-    // },
-  },
   module: {
     rules: [
       {
-        test: /\.(js)$/,
+        test: /\.(js|jsx)$/,
         exclude(modulePath) {
           //   return /node_modules/.test(modulePath);
           return /node_modules/.test(modulePath) || /hybrid-portal-adapter/.test(modulePath);
@@ -87,7 +67,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              presets: ['@babel/preset-env'],
+              presets: ['@babel/preset-env', '@babel/preset-react'],
             },
           },
         ],

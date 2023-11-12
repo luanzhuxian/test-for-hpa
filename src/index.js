@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 
-import Hpa, { useDialog } from '@eureka/hybrid-portal-adapter';
 import * as TestPlugin from 'lzx-test-plugin';
 
 import a from './a';
 
 debugger;
 
-let cleanupFn = Hpa.init({ env: 'stand_alone', container: document.querySelector('body') });
-
 TestPlugin.testFn();
 
-// ReactDOM.createRoot(document.getElementById('app'));
+const App = () => {
+  const [a, setA] = useState('666');
+
+  return <div>{a}</div>;
+};
+
+const root = ReactDOM.createRoot(document.getElementById('app'));
+root.render(<App />);
