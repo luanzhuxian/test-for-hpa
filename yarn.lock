@@ -2739,10 +2739,10 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-lzx-test-plugin@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/lzx-test-plugin/-/lzx-test-plugin-4.0.0.tgz#844b728ddb2aca2945477c1d6be7901e621de3da"
-  integrity sha512-27kEEaSCpEJ9RjjnayTqElpKhEsE+ZrXdcVFVfYZxMk/ocTjGfeNYFQsQNfcu8aVWB+rsa1IS2bOUp1Fox1DqA==
+lzx-test-plugin@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/lzx-test-plugin/-/lzx-test-plugin-5.0.0.tgz#3e7b0d4459ffe433128773b2e89ff88eb877e9de"
+  integrity sha512-ZLyUFvNd/aL8p1qbZ8/9BqyN/PgaGuCKQzhgRthWzcX3c3S0QQnEQhpZVX+k49qLM1S2F/l4N6a1wPPjJBkLbw==
 
 media-typer@0.3.0:
   version "0.3.0"
