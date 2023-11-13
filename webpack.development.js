@@ -13,7 +13,8 @@ const mapToFolder = (dependencies, folder) =>
 
 module.exports = {
   mode: 'development',
-  devtool: 'eval-source-map',
+  // devtool: 'eval-source-map',
+  devtool: 'source-map',
   entry: {
     main: path.resolve(__dirname, './src/index'),
   },
@@ -71,6 +72,12 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.js$/,
+        enforce: 'pre',
+        use: ['source-map-loader'],
+        // exclude: /node_modules/
       },
     ],
   },
