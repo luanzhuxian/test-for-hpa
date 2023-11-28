@@ -15,6 +15,7 @@ module.exports = {
   mode: 'development',
   // devtool: 'eval-source-map',
   devtool: 'source-map',
+  // devtool: 'cheap-module-source-map',
   entry: {
     main: path.resolve(__dirname, './src/index'),
   },
