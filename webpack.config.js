@@ -12,8 +12,9 @@ const mapToFolder = (dependencies, folder) =>
   }, {});
 
 module.exports = {
-  mode: 'none',
-  //   devtool: 'source-map',
+  // mode: 'none',
+  mode: 'production',
+  devtool: 'source-map',
   entry: {
     main: path.resolve(__dirname, './src/index'),
   },
@@ -37,29 +38,29 @@ module.exports = {
       ),
     },
   },
-  optimization: {
-    minimize: false,
-    // splitChunks: {
-    //   cacheGroups: {
-    //     vendors: {
-    //       name: 'vendors',
-    //       test: /[\\/]eureka[\\/]hybrid-portal-adapter[\\/]node_modules[\\/]/,
-    //       priority: 10,
-    //       chunks: 'initial',
-    //       enforce: true,
-    //     },
-    //   },
-    //   maxAsyncRequests: Infinity,
-    //   maxInitialRequests: Infinity,
-    // },
-  },
+  // optimization: {
+  // minimize: false,
+  // splitChunks: {
+  //   cacheGroups: {
+  //     vendors: {
+  //       name: 'vendors',
+  //       test: /[\\/]eureka[\\/]hybrid-portal-adapter[\\/]node_modules[\\/]/,
+  //       priority: 10,
+  //       chunks: 'initial',
+  //       enforce: true,
+  //     },
+  //   },
+  //   maxAsyncRequests: Infinity,
+  //   maxInitialRequests: Infinity,
+  // },
+  // },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude(modulePath) {
-          //   return /node_modules/.test(modulePath);
-          return /node_modules/.test(modulePath) || /hybrid-portal-adapter/.test(modulePath);
+          return /node_modules/.test(modulePath);
+          // return /node_modules/.test(modulePath) || /hybrid-portal-adapter/.test(modulePath);
         },
         use: [
           {
