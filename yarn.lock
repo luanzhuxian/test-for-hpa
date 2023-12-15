@@ -1041,7 +1041,7 @@
   integrity sha512-Qv4LTqO11jepd5Qmlp3M1YEjBumoTHcHFdgPTQ+sFlIL5myi/7xu/POwP7IRu6odBdmLXdtIs1D6TuW6kbwbbg==
 
 "@eureka/hybrid-portal-adapter@file:../../../code/eureka/hybrid-portal-adapter":
-  version "1.0.0-beta.1"
+  version "1.0.0-beta.2"
   resolved "file:../../../code/eureka/hybrid-portal-adapter"
   dependencies:
     prop-types "^15.8.1"

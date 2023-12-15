@@ -62,7 +62,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude(modulePath) {
-          //   return /node_modules/.test(modulePath);
+          // return /node_modules/.test(modulePath);
           return /node_modules/.test(modulePath) || /hybrid-portal-adapter/.test(modulePath);
         },
         use: [
