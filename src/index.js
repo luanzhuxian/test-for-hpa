@@ -1,17 +1,36 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { init } from '@eureka/hybrid-portal-adapter';
+import { init, Alert, Dialog } from '@eureka/hybrid-portal-adapter';
 
 import * as TestPlugin from 'lzx-test-plugin';
 
-import a from './a';
+import x, { y } from './a';
 
-debugger;
+// console.log(x);
 
-init({ env: 'stand_alone' });
+init({ env: 'dxp' });
 
-TestPlugin.testFn();
+// console.log(a);
+console.log(Alert);
+// const d = new Dialog(
+//   {},
+//   {
+//     path: '/deploy-app',
+//     modalSettings: {
+//       title: 'Deploy App',
+//       size: 'l',
+//     },
+//   },
+// );
+// console.log(d);
+// console.log(LuigiHelper);
+
+// debugger;
+
+// init({ env: 'stand_alone' });
+
+// TestPlugin.testFn();
 
 const App = () => {
   const [a, setA] = useState('666');

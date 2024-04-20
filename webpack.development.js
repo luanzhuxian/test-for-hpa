@@ -88,4 +88,10 @@ module.exports = {
       template: './public/index.html',
     }),
   ],
+  optimization: {
+    // runtimeChunk: true, // 单独生成runtime chunk
+    // usedExports: true, // 标记导出的模块是否被使用过
+    // sideEffects: true, // 跳过那些导出内容没有被使用过，也不具备副作用的模块
+    // innerGraph: true, // 允许 webpack 递归地寻找未使用的导出
+  },
 };

@@ -76,6 +76,6 @@ module.exports = {
       },
     ],
   },
-  // plugins: [new CleanWebpackPlugin()],
-  plugins: [new CleanWebpackPlugin(), new BundleAnalyzerPlugin()],
+  plugins: [new CleanWebpackPlugin()],
+  // plugins: [new CleanWebpackPlugin(), new BundleAnalyzerPlugin()],
 };
