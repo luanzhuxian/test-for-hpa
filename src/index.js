@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { init, Alert, Dialog } from '@eureka/hybrid-portal-adapter';
+import { init, Alert, goBack, a } from '@eureka/hybrid-portal-adapter/dist/dev/esm';
 
 import * as TestPlugin from 'lzx-test-plugin';
 
@@ -9,26 +9,14 @@ import x, { y } from './a';
 
 // console.log(x);
 
-init({ env: 'dxp' });
+init({});
+// init({ env: 'stand_alone' });
 
 // console.log(a);
+console.log(goBack);
 console.log(Alert);
-// const d = new Dialog(
-//   {},
-//   {
-//     path: '/deploy-app',
-//     modalSettings: {
-//       title: 'Deploy App',
-//       size: 'l',
-//     },
-//   },
-// );
-// console.log(d);
-// console.log(LuigiHelper);
 
 // debugger;
-
-// init({ env: 'stand_alone' });
 
 // TestPlugin.testFn();
 
